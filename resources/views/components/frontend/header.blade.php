@@ -2,7 +2,13 @@
 <div class="page-wrapper">
 <header class="header header-6">
 	<div class="header-top">
-		<div class="container">
+		@php 
+			$style = "";
+			if(session()->get('locale') == 'ur'){
+				$style = "flex-row-reverse";
+			}
+		@endphp
+		<div class="container {{ $style }}">
 			<div class="header-left">
 				<ul class="top-menu top-link-menu d-none d-md-block">
 					<li>
@@ -52,7 +58,9 @@
 				<nav class="main-nav">
 					<ul class="menu">
 						<li class="active">
-							<a href="#!">Home</a>
+							<a href="#!">
+								@lang('front.Home')
+							</a>
 						</li>
 						<li>
 							<a href="#!" class="sf-with-ul">Admissions</a>
