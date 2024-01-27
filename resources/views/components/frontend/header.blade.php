@@ -62,58 +62,63 @@
 								@lang('front.Home')
 							</a>
 						</li>
+						<!-- <li class="active">
+							<a href="#!">
+								Introduction
+							</a>
+						</li> -->
 						<li>
-							<a href="#!" class="sf-with-ul">Admissions</a>
+							<a href="#!" class="sf-with-ul">@lang('front.academic')</a>
 							<ul class="nav-style">
-								<li><a href="#!">Examination</a></li>
-								<li><a href="#!">Aims and Objective</a></li>
+								<li><a href="#!">@lang('front.examination')</a></li>
+								<li><a href="#!">@lang('front.aims_nd_obj')</a></li>
 								<li>
-									<a href="#!" >Section and Branches</a>
+									<a href="#!" >@lang('front.section_nd_branch')</a>
 								</li>
 								<li>
-									<a href="#!" >Staff Details</a>
+									<a href="#!" >@lang('front.staff_details')</a>
 								</li>
 							</ul>
 						</li>
 
 						<li>
-							<a href="#!" class="sf-with-ul">Media</a>
+							<a href="#!" class="sf-with-ul">@lang('front.media')</a>
 
 							<ul class="nav-style">
-								<li><a href="#!" class="sf-with-ul">Audio</a>
+								<li><a href="#!" class="sf-with-ul">@lang('front.audio')</a>
 									<ul>
-										<li><a href="#!">Weekly Q & A</a></li>
-										<li><a href="#!">Dars-e-Hadith</a></li>
-										<li><a href="#!">Hamd & Naat</a></li>
-										<li><a href="#!">Speeches</a></li>
+										<li><a href="#!">@lang('front.weekly_q_a')</a></li>
+										<li><a href="#!">@lang('front.dars_e_hadith')</a></li>
+										<li><a href="#!">@lang('front.hamd_nd_naat')</a></li>
+										<li><a href="#!">@lang('front.Speeches')</a></li>
 									</ul>
 								</li>
 
-								<li><a href="#!" class="sf-with-ul">Literature</a>
+								<li><a href="#!" class="sf-with-ul">@lang('front.Literature')</a>
 									<ul>
 										
-										<li><a href="#!">Urdu</a></li>
-										<li><a href="#!">English</a></li>
+										<li><a href="#!">@lang('front.Urdu')</a></li>
+										<li><a href="#!">@lang('front.English')</a></li>
 									</ul>
 								</li>
 								<li>
-									<a href="#!">Image Gallary</a>
+									<a href="#!">@lang('front.img_nd_galary')</a>
 								</li>
-								<li><a href="#!" class="sf-with-ul">Events</a>
+								<li><a href="#!" class="sf-with-ul"> @lang('front.Events')</a>
 									<ul>
-										<li><a href="#!">Urshe 1</a></li>
-										<li><a href="#!">Urshe 2</a></li>
+										<li><a href="#!"> @lang('front.Urshe1')</a></li>
+										<li><a href="#!">@lang('front.Urshe2')</a></li>
 									</ul>
 								</li>
 							</ul>
 						</li>
 						<li>
-							<a href="#!" class="sf-with-ul">Services</a>
+							<a href="#!" class="sf-with-ul"> @lang('front.Services')</a>
 
 							<ul class="nav-style">
-								<li><a href="#!">Q & A Library</a></li>
-								<li><a href="#!">Markazi Dar al-Ifta</a></li>
-								<li><a href="#!">Enter Silsilah Quadiriyah</a></li>
+								<li><a href="#!">@lang('front.q_nd_library') </a></li>
+								<li><a href="#!">@lang('front.Markazi_dar_al_Ifta') </a></li>
+								<li><a href="#!">@lang('front.qadri')</a></li>
 							</ul>
 
 						</li>
@@ -135,37 +140,40 @@
 				<nav class="main-nav">
 					<ul class="menu">
 						<li>
-							<a href="#!" class="sf-with-ul">Live</a>
+							<a href="#!" class="sf-with-ul"> @lang('front.Live')</a>
 							<ul  class="nav-style">
-								<li><a href="#!">Weekly Q & A</a></li>
-								<li><a href="#!">Dars-e-Hadith</a></li>
+								<li><a href="#!">@lang('front.weekly_q_a') </a></li>
+								<li><a href="#!">@lang('front.dars_e_hadith')</a></li>
 							</ul>
 						</li>
 						<li>
-							<a href="#!">Donation</a>
+							<a href="#!">@lang('front.Donation')</a>
 							<ul class="nav-style">
 								<li>
-									<a href="#!">Online Donation</a>
+									<a href="#!">
+									@lang('front.online_donation')</a>
 								</li>
 								<li>
-									<a href="#!">Kifalat</a>
+									<a href="#!">@lang('front.Kifalat') </a>
 								</li>
 								<li>
-									<a href="#!">Bank Deposit</a>
+									<a href="#!">
+									@lang('front.bnk_deposit')
+								</a>
 								</li>
 							</ul>
 						</li>
 						<li>
-							<a href="#!">Contact Us</a>
+							<a href="#!">@lang('front.contact_us') </a>
 							<ul class="nav-style">
 								<li>
-									<a href="#!">Taaj al-Shari'ah</a>
+									<a href="#!">@lang('front.taaj_al_sariha') </a>
 								</li>
 								<li>
-									<a href="#!">The Principle</a>
+									<a href="#!">@lang('front.the_principle') </a>
 								</li>
 								<li>
-									<a href="#!">Donations</a>
+									<a href="#!">@lang('front.Donations') </a>
 								</li>
 							</ul>
 						</li>
