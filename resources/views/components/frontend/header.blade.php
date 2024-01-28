@@ -83,7 +83,37 @@
 								</li>
 							</ul>
 						</li>
+						<li>
+							<a href="{{ route('page', 'academic') }}"> Academic</a>
+						</li>
+						
+						<li>
+							<a href="#!" class="sf-with-ul"> @lang('front.Services')</a>
 
+							<ul class="nav-style">
+								<li><a href="#!">@lang('front.q_nd_library') </a></li>
+								<li><a href="#!">@lang('front.Markazi_dar_al_Ifta') </a></li>
+								<li><a href="#!">@lang('front.qadri')</a></li>
+							</ul>
+
+						</li>
+
+					</ul><!-- End .menu -->
+				</nav><!-- End .main-nav -->
+
+				<button class="mobile-menu-toggler">
+					<span class="sr-only">Toggle mobile menu</span>
+					<i class="icon-bars"></i>
+				</button>
+			</div><!-- End .header-left -->
+			<div class="logo-middle">
+				<a href="#!">
+					<img src="{{ asset('frontend/assets/logo/logo.jpg') }}" class="sticky-logo" alt="Footer Logo" width="82" height="25">
+				</a>
+			</div>
+			<div class="header-right">
+				<nav class="main-nav">
+					<ul class="menu">
 						<li>
 							<a href="#!" class="sf-with-ul">@lang('front.media')</a>
 
@@ -115,33 +145,6 @@
 								</li>
 							</ul>
 						</li>
-						<li>
-							<a href="#!" class="sf-with-ul"> @lang('front.Services')</a>
-
-							<ul class="nav-style">
-								<li><a href="#!">@lang('front.q_nd_library') </a></li>
-								<li><a href="#!">@lang('front.Markazi_dar_al_Ifta') </a></li>
-								<li><a href="#!">@lang('front.qadri')</a></li>
-							</ul>
-
-						</li>
-
-					</ul><!-- End .menu -->
-				</nav><!-- End .main-nav -->
-
-				<button class="mobile-menu-toggler">
-					<span class="sr-only">Toggle mobile menu</span>
-					<i class="icon-bars"></i>
-				</button>
-			</div><!-- End .header-left -->
-			<div class="logo-middle">
-				<a href="#!">
-					<img src="{{ asset('frontend/assets/logo/logo.jpg') }}" class="sticky-logo" alt="Footer Logo" width="82" height="25">
-				</a>
-			</div>
-			<div class="header-right">
-				<nav class="main-nav">
-					<ul class="menu">
 						<li>
 							<a href="#!" class="sf-with-ul"> @lang('front.Live')</a>
 							<ul  class="nav-style">

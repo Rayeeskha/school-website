@@ -1,7 +1,7 @@
 @extends('frontend.layouts.app')
-@section('page_title','Gareeb Nawaz Markaz')
-@section('meta_keywords','Gareeb Nawaz Markaz')
-@section('meta_description', 'Gareeb Nawaz Markaz')
+@section('page_title','Gareeb Nawaz Markaz Examination')
+@section('meta_keywords','Gareeb Nawaz Markaz Examination')
+@section('meta_description', 'Gareeb Nawaz Markaz Examination')
 @section('container')
 
 @include('frontend.pages.static.header', ['heading'=> Lang::get('examination.EXAMINATION')])
