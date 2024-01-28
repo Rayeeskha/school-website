@@ -17,10 +17,14 @@ use App\Http\Controllers\LanguageController;
 
 Route::get('/', HomeController::class)->name('home');
 
+
+Route::get('website', [HomeController::class,'website'])->name('website');
+
 Route::get('gareeb-nawaz-markaz', function() {
   	return QrCode::size(300)->generate('https://ghareebnawazmarkaz.com/');
 });
 
+Route::match(['POST','GET'],'/page/{page}', [HomeController::class, 'page'])->name('page')->where('page',"examination");
 
 Route::get('lang/change/{lang}',[LanguageController::class,'change'])->name('change');
 

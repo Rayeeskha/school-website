@@ -33,4 +33,10 @@ return [
 	'taaj_al_sariha' => "Taaj al-Shari'ah",
 	'the_principle' => 'The Principle',
 	'Donations'     => 'Donations',
+	'Baidaula'      =>'Baidaula',
+	'help_nd_info'  =>'Help & Information',
+	'about_us'      => 'About Us',
+	'privacy_policy' => 'Privacy Policy',
+	'Introduction'   =>'Introduction', 
+	'Download'       => 'Download',
 ];

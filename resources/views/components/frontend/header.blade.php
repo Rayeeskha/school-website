@@ -23,11 +23,11 @@
 			<div class="header-right">
 
 				<div class="header-dropdown">
-					<a href="#" class="language">English</a>
+					<a href="#" class="language">@lang('front.English')</a>
 					<div class="header-menu">
 						<ul>
-							<li><a href="{{ url('lang/change/en') }}">English</a></li>
-							<li><a href="{{ url('lang/change/ur') }}">Urdu</a></li>
+							<li><a href="{{ url('lang/change/en') }}">@lang('front.English')</a></li>
+							<li><a href="{{ url('lang/change/ur') }}">@lang('front.Urdu')</a></li>
 						</ul>
 					</div><!-- End .header-menu -->
 				</div><!-- End .header-dropdown -->
@@ -68,9 +68,12 @@
 							</a>
 						</li> -->
 						<li>
-							<a href="#!" class="sf-with-ul">@lang('front.academic')</a>
+							<a href="#!" class="sf-with-ul">
+								<!-- @lang('front.academic') -->
+								@lang('front.Introduction')
+							</a>
 							<ul class="nav-style">
-								<li><a href="#!">@lang('front.examination')</a></li>
+								<li><a href="{{ route('page', 'examination') }}">@lang('front.examination')</a></li>
 								<li><a href="#!">@lang('front.aims_nd_obj')</a></li>
 								<li>
 									<a href="#!" >@lang('front.section_nd_branch')</a>

@@ -33,4 +33,10 @@ return [
 	'taaj_al_sariha' => "تاج الشریعہ",
 	'the_principle' => 'اصول',
 	'Donations'     => 'عطیات',
+	'Baidaula'      =>'بیدولہ',
+	'help_nd_info'  =>'مدد اور معلومات',
+	'about_us'      => 'ہمارے بارے میں',
+	'privacy_policy' => 'رازداری کی پالیسی', 
+	'Introduction'   =>'تعارف', 
+	'Download'       => 'ڈاؤن لوڈ کریں',
 ];

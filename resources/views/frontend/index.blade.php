@@ -27,8 +27,7 @@
 				</figure><!-- End .product-gallery-image -->
 			</div>
 		</div>
-		</div>
-		
+		</div>		
 	</div>
 </div>
 @endsection
