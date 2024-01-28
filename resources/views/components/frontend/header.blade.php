@@ -84,7 +84,7 @@
 							</ul>
 						</li>
 						<li>
-							<a href="{{ route('page', 'academic') }}"> Academic</a>
+							<a href="{{ route('page', 'academic') }}">@lang('academic.academic') </a>
 						</li>
 						
 						<li>
