@@ -12,6 +12,7 @@ $('.addSlider').click(function() {
 // Edit Slider
 $(document).on('click','.editSlider',function(){
   $('.text-danger').html('');
+  $('.image_show').html('');
   $('.validateForm')[0].reset();
   $('.modal-title').html('Edit Slider');
   let selector = $(this);
@@ -26,6 +27,7 @@ $(document).on('click','.editSlider',function(){
 // addStaff
 $('.addStaff').click(function() {
   $('.text-danger').html('');
+  $('.image_show').html('');
   $('.staff_id').val('');
   $('.image_show').html('');
   $('.validateForm')[0].reset();
@@ -37,6 +39,7 @@ $('.addStaff').click(function() {
 //editStaff
 $(document).on('click','.editStaff',function(){
   $('.text-danger').html('');
+  $('.image_show').html('');
   $('.validateForm')[0].reset();
   $('.modal-title').html('Edit Staff');
   let selector = $(this);
@@ -55,6 +58,7 @@ $(document).on('click','.editStaff',function(){
 // addCourse
 $('.addCourse').click(function() {
   $('.text-danger').html('');
+  $('.image_show').html('');
   $('.course_id').val('');
   $('.validateForm')[0].reset();
   $('.modal-title').html('Add Course');
@@ -65,6 +69,7 @@ $('.addCourse').click(function() {
 // editCourse
 $(document).on('click','.editCourse',function(){
   $('.text-danger').html('');
+  $('.image_show').html('');
   $('.validateForm')[0].reset();
   $('.modal-title').html('Edit Course');
   let selector = $(this);
@@ -81,6 +86,7 @@ $(document).on('click','.editCourse',function(){
 $('.addMedia').click(function() {
   $('.text-danger').html('');
   $('.course_id').val('');
+  $('.image_show').html('');
   $('.validateForm')[0].reset();
   $('.modal-title').html('Add Media');
   $('.mediaModal').modal({ backdrop: 'static', keyboard: false });
@@ -90,6 +96,7 @@ $('.addMedia').click(function() {
 // editMedia
 $(document).on('click','.editMedia',function(){
   $('.text-danger').html('');
+  $('.image_show').html('');
   $('.validateForm')[0].reset();
   $('.modal-title').html('Edit Media');
   let selector = $(this);
