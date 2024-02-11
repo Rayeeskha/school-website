@@ -21,7 +21,14 @@ class CommonController extends Controller
             switch ($table) {
                 case "sliders":
                 $data = \App\Models\Slider::find($id);
-                break;
+                    break;
+                case "courses":
+                $data = \App\Models\Course::find($id);
+                    break;
+                case "media":
+                $data = \App\Models\Media::find($id);
+                    break;    
+                    
             }
             if(!is_null($data)){
                 if ($chek_foreign > 0) {
@@ -50,7 +57,13 @@ class CommonController extends Controller
             switch ($table) {
                 case "sliders":
                 $data = \App\Models\Slider::find($id);
-                break;   
+                    break;
+                case "courses":
+                $data = \App\Models\Course::find($id);
+                    break;
+                case "media":
+                $data = \App\Models\Media::find($id);
+                    break;   
             }
             if(!is_null($data)){
                 $data->status = $data->status == 1 ? 0 : 1;
