@@ -39,4 +39,6 @@ return [
 	'privacy_policy' => 'رازداری کی پالیسی', 
 	'Introduction'   =>'تعارف', 
 	'Download'       => 'ڈاؤن لوڈ کریں',
+	'course_detail'  => 'کورس کی تفصیل',
+	'admission'      => 'داخلہ',
 ];

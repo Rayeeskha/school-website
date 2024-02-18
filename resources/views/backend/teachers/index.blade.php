@@ -62,10 +62,35 @@
           <input type="hidden" name="id" value="" class="staff_id">
            <div class="modal-body">
               <div class="row">
-                <div class="col-md-12">
-                  <label>Staff Name</label>
+                <div class="col-md-6">
+                  <label>Staff Name English</label>
                   <input type="text" name="name" class="form-control name">
                   <span class="text-danger Errname"></span>
+                </div>
+                <div class="col-md-6">
+                  <label>Staff Name Urdu</label>
+                  <input type="text" name="name_ur" class="form-control name_ur" dir="rtl">
+                  <span class="text-danger Errname_ur"></span>
+                </div>
+                <div class="col-md-6">
+                  <label>Staff Qualification English</label>
+                  <input type="text" name="qualification" class="form-control qualification">
+                  <span class="text-danger Errqualification"></span>
+                </div>
+                <div class="col-md-6">
+                  <label>Staff Qualification Urdu</label>
+                  <input type="text" name="qualification_ur" class="form-control qualification_ur" dir="rtl">
+                  <span class="text-danger Errqualification_ur"></span>
+                </div>
+                <div class="col-md-6">
+                  <label>Staff Specility English</label>
+                  <input type="text" name="specility" class="form-control specility">
+                  <span class="text-danger Errspecility"></span>
+                </div>
+                <div class="col-md-6">
+                  <label>Staff Specility Urdu</label>
+                  <input type="text" name="specility_ur" class="form-control specility_ur" dir="rtl">
+                  <span class="text-danger Errspecility_ur"></span>
                 </div>
                 <div class="col-md-12">
                   <label>Staff Email</label>
@@ -77,16 +102,7 @@
                   <input type="number" name="phone" class="form-control phone">
                   <span class="text-danger Errphone"></span>
                 </div>
-                <div class="col-md-12">
-                  <label>Staff Qualification</label>
-                  <input type="text" name="qualification" class="form-control qualification">
-                  <span class="text-danger Errqualification"></span>
-                </div>
-                <div class="col-md-12">
-                  <label>Staff Specility</label>
-                  <input type="text" name="specility" class="form-control specility">
-                  <span class="text-danger Errspecility"></span>
-                </div>
+                
 
                 <div class="col-md-12">
                   <label>Photo</label>
@@ -141,6 +157,9 @@
         $(row).attr('row-photo',data.photo);
         $(row).attr('row-qualification',data.qualification);
         $(row).attr('row-specility',data.specility);
+        $(row).attr('row-name_ur',data.name_ur);
+        $(row).attr('row-qualification_ur',data.qualification_ur);
+        $(row).attr('row-specility_ur',data.specility_ur);
       }
     });
   });

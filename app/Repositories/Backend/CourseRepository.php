@@ -24,7 +24,11 @@ class CourseRepository extends BaseRepository
                 return $btn; 
             })->editColumn('created_at', function($row){
                 return date('d M Y',strtotime($row->created_at));
-			})->editColumn('status', function($row){
+			})->editColumn('course_details', function($row){
+                return Str::limit($row->course_details,30);
+            })->editColumn('course_details_ur', function($row){
+                return Str::limit($row->course_details_ur,30);
+            })->editColumn('status', function($row){
                 $active = $row->status == '1' ? "checked" : '';
                 $x = ($active) ? " switch3-checked " : " ";
                 return '<div class="form-check form-switch form-switch-right form-switch-md">

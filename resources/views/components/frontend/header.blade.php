@@ -69,8 +69,9 @@
 						</li> -->
 						<li>
 							<a href="#!" class="sf-with-ul">
+								@lang('front.examination')
 								<!-- @lang('front.academic') -->
-								@lang('front.Introduction')
+								<!-- @lang('front.Introduction') -->
 							</a>
 							<ul class="nav-style">
 								<li><a href="{{ route('page', 'examination') }}">@lang('front.examination')</a></li>
@@ -78,13 +79,28 @@
 								<li>
 									<a href="#!" >@lang('front.section_nd_branch')</a>
 								</li>
-								<li>
-									<a href="#!" >@lang('front.staff_details')</a>
-								</li>
+								
 							</ul>
 						</li>
 						<li>
-							<a href="{{ route('page', 'academic') }}">@lang('academic.academic') </a>
+							<a href="#!" class="sf-with-ul">
+								@lang('academic.academic')
+							</a>
+							<ul class="nav-style">
+								<li>
+									<a href="#!">@lang('academic.academic') </a>
+								</li>
+								<li>
+
+									<a href="{{ route('page', 'examination') }}">@lang('front.admission')</a></li>
+								<li>
+									<a href="#!" >@lang('front.staff_details')</a>
+								</li>
+								
+								<li>
+									<a href="#!" >@lang('front.course_detail')</a>
+								</li>
+							</ul>
 						</li>
 						
 						<li>
@@ -95,7 +111,6 @@
 								<li><a href="#!">@lang('front.Markazi_dar_al_Ifta') </a></li>
 								<li><a href="#!">@lang('front.qadri')</a></li>
 							</ul>
-
 						</li>
 
 					</ul><!-- End .menu -->

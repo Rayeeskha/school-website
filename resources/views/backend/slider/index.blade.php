@@ -28,9 +28,9 @@
                      <thead>
                         <tr>
                            <th data-ordering="false">SR No.</th>
-                           <th data-ordering="false">Image</th>
-                           <th data-ordering="false">Title</th>
-                           
+                           <th>Image</th>
+                           <th>Title English</th>
+                           <th>Title Urdu</th>        
                            <th>Status</th>
                            <th>created at</th>
                            <th>Action</th>
@@ -59,11 +59,16 @@
           <input type="hidden" name="id" value="" class="slider_id">
            <div class="modal-body">
               <div class="row">
-                <div class="col-md-12">
-                  <label>Slider Title</label>
+                <div class="col-md-6">
+                  <label>Slider Title English</label>
                   <input type="text" name="name" class="form-control slider_name">
 
                   <span class="text-danger Errname"></span>
+                </div>
+                <div class="col-md-6">
+                  <label>Slider Title Urdu</label>
+                  <input type="text" name="name_ur" class="form-control name_ur" dir="rtl">
+                  <span class="text-danger Errname_ur"></span>
                 </div>
 
                 <div class="col-md-12">
@@ -102,6 +107,7 @@
          {data: 'DT_RowIndex', orderable: false,searchable: false},
          {data: 'image', name: 'image'},
          {data: 'name', name: 'name'},
+         {data: 'name_ur', name: 'name_ur'},
          {data: 'status', name: 'status'},
          {data: 'created_at', name: 'created_at'},        
          {data: 'action', name: 'action'},        
@@ -111,6 +117,7 @@
         $(row).attr('row-slider_id',data.id);
         $(row).attr('row-slider_name',data.name);
         $(row).attr('row-slider_image',data.image);
+        $(row).attr('row-name_ur',data.name_ur);
       }
     });
   });

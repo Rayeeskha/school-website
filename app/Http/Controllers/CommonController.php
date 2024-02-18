@@ -27,8 +27,10 @@ class CommonController extends Controller
                     break;
                 case "media":
                 $data = \App\Models\Media::find($id);
-                    break;    
-                    
+                    break;
+                case "teachers":
+                $data = \App\Models\Teacher::find($id);
+                    break; 
             }
             if(!is_null($data)){
                 if ($chek_foreign > 0) {
@@ -63,6 +65,9 @@ class CommonController extends Controller
                     break;
                 case "media":
                 $data = \App\Models\Media::find($id);
+                    break;
+                case "teachers":
+                $data = \App\Models\Teacher::find($id);
                     break;   
             }
             if(!is_null($data)){

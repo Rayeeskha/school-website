@@ -25,6 +25,9 @@ class CourseRequest extends FormRequest
             'course_name' => 'required',
             'course_duration' => 'required',
             'course_details' => 'required',
+            'course_name_ur' => 'required',
+            'course_duration_ur' => 'required',
+            'course_details_ur' => 'required',
         ];
     }
 }

@@ -27,9 +27,10 @@
                      <thead>
                         <tr>
                            <th data-ordering="false">SR No.</th>
-                           <th>Course Name</th>
-                           <th>Course duration</th>
-                           <th>Course details</th>       
+                           <th>Course Name En</th>
+                           <th>Course Name Ur</th>
+                           <th>Course duration En</th>
+                           <th>Course details En</th> 
                            <th>Status</th>
                            <th>created at</th>
                            <th>Action</th>
@@ -58,20 +59,30 @@
           <input type="hidden" name="id" value="" class="course_id">
            <div class="modal-body">
               <div class="row">
-                <div class="col-md-12">
-                  <label>Course Name</label>
+                <div class="col-md-6">
+                  <label>Course Name English</label>
                   <input type="text" name="course_name" class="form-control course_name">
-                  <span class="text-danger Errcourse_name"></span>
-                </div>
-                <div class="col-md-12">
-                  <label>Course Duration</label>
+                  <span class="text-danger Errcourse_name"></span><br>
+                  <label>Course Duration English</label>
                   <input type="text" name="course_duration" class="form-control course_duration">
-                  <span class="text-danger Errcourse_duration"></span>
-                </div>                
-                <div class="col-md-12">
-                  <label>Course Details</label>
+                  <span class="text-danger Errcourse_duration"></span><br>
+
+                  <label>Course Details English</label>
                   <textarea class="form-control course_details" name="course_details"> </textarea>
-                  <span class="text-danger Errcourse_details"></span>
+                  <span class="text-danger Errcourse_details"></span><br>
+                </div>               
+                <div class="col-md-6">
+                  <label>Course Name Urdu</label>
+                  <input type="text" name="course_name_ur" class="form-control course_name_ur" dir="rtl">
+                  <span class="text-danger Errcourse_name_ur"></span><br>
+
+                  <label>Course Duration Urdu</label>
+                  <input type="text" name="course_duration_ur" class="form-control course_duration_ur" dir="rtl">
+                  <span class="text-danger Errcourse_duration_ur"></span><br>
+
+                  <label>Course Details Urdu</label>
+                  <textarea class="form-control course_details_ur" name="course_details_ur" dir="rtl"> </textarea>
+                  <span class="text-danger Errcourse_details_ur"></span><br>
                 </div>
               </div>
            </div>
@@ -99,6 +110,7 @@
        columns: [
          {data: 'DT_RowIndex', orderable: false,searchable: false},
          {data: 'course_name', name: 'course_name'},
+         {data: 'course_name_ur', name: 'course_name_ur'},
          {data: 'course_duration', name: 'course_duration'},
          {data: 'course_details', name: 'course_details'},
          {data: 'status', name: 'status'},
@@ -111,6 +123,9 @@
         $(row).attr('row-course_name',data.course_name);
         $(row).attr('row-course_duration',data.course_duration);
         $(row).attr('row-course_details',data.course_details);
+        $(row).attr('row-course_name_ur',data.course_name_ur);
+        $(row).attr('row-course_duration_ur',data.course_duration_ur);
+        $(row).attr('row-course_details_ur',data.course_details_ur);
       }
     });
   });

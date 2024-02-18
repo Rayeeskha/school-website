@@ -39,4 +39,6 @@ return [
 	'privacy_policy' => 'Privacy Policy',
 	'Introduction'   =>'Introduction', 
 	'Download'       => 'Download',
+	'course_detail'  => 'Course Detail',
+	'admission'      => 'Admission',
 ];

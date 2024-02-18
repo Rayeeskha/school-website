@@ -3,7 +3,7 @@
 <head>
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta name="viewport" content="width=device-width,height=device-height,initial-scale=1">
 	<title>Gareeb Nawaz Markaz</title>
 	<meta name="keywords" content="Gareeb Nawaz Markaz">
 	<meta name="description" content="Gareeb Nawaz Markaz">
@@ -35,5 +35,12 @@
 	
 	<style type="text/css">
 		.nav-style li a{border-bottom:  1px solid silver}
+		@font-face {
+font-family: 'Jameel Noori Nastaleeq';
+src: url('https://www.fontsaddict.com/fontface/jameel-noori-nastaleeq.ttf');
+}
+body {
+font-family: 'Jameel Noori Nastaleeq', serif;
+}
 	</style>
 </head>

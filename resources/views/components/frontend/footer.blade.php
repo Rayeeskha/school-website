@@ -39,7 +39,9 @@
 
 					<div class="col-sm-4 col-lg-2 col-6">
 						<div class="widget">
-							<h4 class="widget-title"> @lang('front.Introduction')</h4><!-- End .widget-title -->
+							<h4 class="widget-title"> 
+								<!-- @lang('front.Introduction') -->
+							</h4><!-- End .widget-title -->
 
 							<ul class="widget-list">
 								<li><a href="#!">@lang('front.aims_nd_obj') </a></li>
@@ -105,12 +107,36 @@
 				</li>
 
 				<li>
-					<a href="#!" class="sf-with-ul">@lang('front.Introduction')</a>
+					<a href="#!" class="sf-with-ul">
+						@lang('front.examination')
+						<!-- @lang('front.Introduction') -->
+					</a>
 					<ul>
 						<li>
 							<a href="#!" class="sf-with-ul">@lang('front.aims_nd_obj')</a>
 						</li>
 						<li><a href="#!">@lang('front.section_nd_branch')</a></li>
+					</ul>
+				</li>
+				<li>
+					<a href="#!" class="sf-with-ul">
+						@lang('academic.academic')
+					</a>
+					<ul class="nav-style">
+						<li>
+							<a href="{{ route('page', 'academic') }}">@lang('academic.academic') </a>
+						</li>
+						<li>
+
+							<a href="{{ route('page', 'examination') }}">@lang('front.admission')</a></li>
+						<li>
+							<a href="#!" >@lang('front.staff_details')</a>
+						</li>
+						
+						<li>
+							<a href="#!" >@lang('front.course_detail')
+							</a>
+						</li>
 					</ul>
 				</li>
 

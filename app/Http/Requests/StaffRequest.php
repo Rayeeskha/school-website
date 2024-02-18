@@ -30,7 +30,9 @@ class StaffRequest extends FormRequest
             'name' => 'required',
             'phone' => 'required',
             'qualification' => 'required',
-            'specility' => 'required',
+            // 'specility' => 'required',
+            'name_ur' => 'required',
+            'qualification_ur' => 'required',
             'photo' => $photo,
         ];
     }

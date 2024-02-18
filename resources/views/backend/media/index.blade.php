@@ -27,7 +27,8 @@
                      <thead>
                         <tr>
                            <th data-ordering="false">SR No.</th>
-                           <th>Title</th>
+                           <th>Title English</th>
+                           <th>Title Urdu</th>
                            <th>Media</th>
                            <th>Status</th>
                            <th>created at</th>
@@ -56,10 +57,30 @@
           <input type="hidden" name="id" value="" class="media_id">
            <div class="modal-body">
               <div class="row">
-                <div class="col-md-12">
-                  <label>Media Title</label>
+                <div class="col-md-6">
+                  <label>Media Title English</label>
                   <input type="text" name="media_title" class="form-control media_title">
                   <span class="text-danger Errmedia_title"></span>
+                </div>
+                <div class="col-md-6">
+                  <label>Media Title Urdu</label>
+                  <input type="text" name="media_title_ur" class="form-control media_title_ur" dir="rtl">
+                  <span class="text-danger Errmedia_title_ur"></span>
+                </div>
+                <div class="col-md-6">
+                  <label>Media Description English</label>
+                  <textarea name="media_desc" class="form-control media_desc"></textarea>
+                  <span class="text-danger Errmedia_desc"></span>
+                </div>
+                <div class="col-md-6">
+                  <label>Media Description Urdu</label>
+                  <textarea name="media_desc_ur" class="form-control media_desc_ur" dir="rtl"></textarea>
+                  <span class="text-danger Errmedia_desc_ur"></span>
+                </div>
+                <div class="col-md-12">
+                  <label>Media Type</label>
+                  <select name="media_type" class="form-control media_type_arr"></select>
+                  <span class="text-danger Errmedia_type"></span>
                 </div>
                 <div class="col-md-12">
                   <label>Media Photo</label>
@@ -95,6 +116,7 @@
        columns: [
          {data: 'DT_RowIndex', orderable: false,searchable: false},
          {data: 'media_title', name: 'media_title'},
+         {data: 'media_title_ur', name: 'media_title_ur'},
          {data: 'photo', name: 'photo'},
          {data: 'status', name: 'status'},
          {data: 'created_at', name: 'created_at'},
@@ -105,6 +127,10 @@
         $(row).attr('row-media_id',data.id);
         $(row).attr('row-media_title',data.media_title);
         $(row).attr('row-photo',data.photo);
+        $(row).attr('row-media_desc',data.media_desc);
+        $(row).attr('row-media_title_ur',data.media_title_ur);
+        $(row).attr('row-media_desc_ur',data.media_desc_ur);
+        $(row).attr('row-media_type',data.media_type);
       }
     });
   });
