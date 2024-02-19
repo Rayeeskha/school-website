@@ -44,7 +44,7 @@
                      <a href="{{ route('admin.course.index') }}" class="nav-link" data-key="t-calendar"> Course </a>
                   </li>
                   <li class="nav-item">
-                     <a href="{{ route('admin.teacher.index') }}" class="nav-link" data-key="t-calendar"> Teachers </a>
+                     <a href="{{ route('admin.teacher.index') }}" class="nav-link" data-key="t-calendar"> Staff </a>
                   </li>
                </ul>
             </div>

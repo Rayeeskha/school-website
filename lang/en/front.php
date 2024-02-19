@@ -41,4 +41,7 @@ return [
 	'Download'       => 'Download',
 	'course_detail'  => 'Course Detail',
 	'admission'      => 'Admission',
+	'name'           => 'Name',
+	'Qualification'  => 'Qualification',
+	'Speciality'  	 => 'Speciality',
 ];

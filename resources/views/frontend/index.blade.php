@@ -21,8 +21,8 @@
 			<!-- <div class="col-md-3 col-12">
 				<figure class="product-gallery-image">
 					<img src="{{ asset('frontend/assets/logo/logo.jpg') }}" alt="who we are image">
-				</figure><!-- End .product-gallery-image -->
-			</div> -->
+				</figure> End .product-gallery-image -->
+			</div> 
 		</div>
 		</div>		
 	</div>

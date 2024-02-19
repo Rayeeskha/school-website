@@ -41,4 +41,7 @@ return [
 	'Download'       => 'ڈاؤن لوڈ کریں',
 	'course_detail'  => 'کورس کی تفصیل',
 	'admission'      => 'داخلہ',
+	'name'           => 'نام',
+	'Qualification'  => 'قابلیت',
+	'Speciality'  	 => 'خاصیت',
 ];

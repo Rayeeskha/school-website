@@ -92,6 +92,27 @@
                   <input type="text" name="specility_ur" class="form-control specility_ur" dir="rtl">
                   <span class="text-danger Errspecility_ur"></span>
                 </div>
+                <div class="col-md-6">
+                  <label>Serving to Institute En</label>
+                  <input type="text" name="serving_to_inst" class="form-control serving_to_inst" >
+                  <span class="text-danger Errserving_to_inst"></span>
+                </div>
+                <div class="col-md-6">
+                  <label>Serving to Institute Urdu</label>
+                  <input type="text" name="serving_to_inst_ur" class="form-control serving_to_inst_ur" dir="rtl">
+                  <span class="text-danger Errserving_to_inst_ur"></span>
+                </div>
+                <div class="col-md-12">
+                  <label>Education Detail English</label>
+                  <input type="text" name="education_detail" class="form-control education_detail" >
+                  <span class="text-danger Erreducation_detail"></span>
+                </div>
+                <div class="col-md-12">
+                  <label>Education Detail Urdu</label>
+                  <input type="text" name="education_detail_ur" class="form-control education_detail_ur" dir="rtl">
+                  <span class="text-danger Erreducation_detail_ur"></span>
+                </div>
+
                 <div class="col-md-12">
                   <label>Staff Email</label>
                   <input type="text" name="email" class="form-control email">
@@ -160,6 +181,10 @@
         $(row).attr('row-name_ur',data.name_ur);
         $(row).attr('row-qualification_ur',data.qualification_ur);
         $(row).attr('row-specility_ur',data.specility_ur);
+        $(row).attr('row-serving_to_inst',data.serving_to_inst);
+        $(row).attr('row-serving_to_inst_ur',data.serving_to_inst_ur);
+        $(row).attr('row-education_detail',data.education_detail);
+        $(row).attr('row-education_detail_ur',data.education_detail_ur);
       }
     });
   });

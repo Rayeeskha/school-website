@@ -4,8 +4,12 @@
 	<div class="header-top">
 		@php 
 			$style = "";
+			$languageUrl = "lang/change/en";
+			$language = "front.English";
 			if(session()->get('locale') == 'ur'){
 				$style = "flex-row-reverse";
+				$languageUrl = "lang/change/ur";
+				$language = "front.Urdu";
 			}
 		@endphp
 		<div class="container {{ $style }}">
@@ -21,13 +25,15 @@
 			</div><!-- End .header-left -->
 
 			<div class="header-right">
-
 				<div class="header-dropdown">
-					<a href="#" class="language">@lang('front.English')</a>
+					<a href="{{ url($languageUrl) }}" class="language">@lang($language)</a>
 					<div class="header-menu">
 						<ul>
-							<li><a href="{{ url('lang/change/en') }}">@lang('front.English')</a></li>
-							<li><a href="{{ url('lang/change/ur') }}">@lang('front.Urdu')</a></li>
+							@if(session()->get('locale') == 'ur')
+								<li><a href="{{ url('lang/change/en') }}">@lang('front.English')</a></li>
+							@else
+								<li><a href="{{ url('lang/change/ur') }}">@lang('front.Urdu')</a></li>
+							@endif
 						</ul>
 					</div><!-- End .header-menu -->
 				</div><!-- End .header-dropdown -->
@@ -94,7 +100,7 @@
 
 									<a href="{{ route('page', 'examination') }}">@lang('front.admission')</a></li>
 								<li>
-									<a href="#!" >@lang('front.staff_details')</a>
+									<a href="{{ route('staff_details') }}" >@lang('front.staff_details')</a>
 								</li>
 								
 								<li>

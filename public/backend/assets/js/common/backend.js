@@ -54,6 +54,10 @@ $(document).on('click','.editStaff',function(){
   $('.name_ur').val(tr.attr('row-name_ur'));
   $('.qualification_ur').val(tr.attr('row-qualification_ur'));
   $('.specility_ur').val(tr.attr('row-specility_ur'));
+  $('.serving_to_inst').val(tr.attr('row-serving_to_inst'));
+  $('.serving_to_inst_ur').val(tr.attr('row-serving_to_inst_ur'));
+  $('.education_detail').val(tr.attr('row-education_detail'));
+  $('.education_detail_ur').val(tr.attr('row-education_detail_ur'));
   $('.image_show').html(tr.attr('row-photo'));
   $('.staffModal').modal({ backdrop: 'static', keyboard: false });
   $('.staffModal').modal('show');

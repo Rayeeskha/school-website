@@ -24,6 +24,8 @@ Route::get('gareeb-nawaz-markaz', function() {
   	return QrCode::size(300)->generate('https://ghareebnawazmarkaz.com/');
 });
 
+Route::match(['POST','GET'],'staff-details', [HomeController::class, 'staffDetail'])->name('staff_details');
+
 Route::match(['POST','GET'],'/page/{page}', [HomeController::class, 'page'])->name('page')->where('page',"examination|academic");
 
 Route::get('lang/change/{lang}',[LanguageController::class,'change'])->name('change');

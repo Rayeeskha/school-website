@@ -36,11 +36,11 @@
 	<style type="text/css">
 		.nav-style li a{border-bottom:  1px solid silver}
 		@font-face {
-font-family: 'Jameel Noori Nastaleeq';
-src: url('https://www.fontsaddict.com/fontface/jameel-noori-nastaleeq.ttf');
-}
-body {
-font-family: 'Jameel Noori Nastaleeq', serif;
-}
+			font-family: 'Jameel Noori Nastaleeq';
+			src: url('https://www.fontsaddict.com/fontface/jameel-noori-nastaleeq.ttf');
+			}
+			body {
+			font-family: 'Jameel Noori Nastaleeq', serif;
+			}
 	</style>
 </head>
