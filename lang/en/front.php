@@ -44,4 +44,8 @@ return [
 	'name'           => 'Name',
 	'Qualification'  => 'Qualification',
 	'Speciality'  	 => 'Speciality',
+	'course_details'  	 => 'Course Details',
+	'course_name'  => 'Course Name',
+	'course_duration'  => 'Course Duration',
+	'course_details'  => 'Course Details',
 ];

@@ -104,7 +104,7 @@
 								</li>
 								
 								<li>
-									<a href="#!" >@lang('front.course_detail')</a>
+									<a href="{{ route('course_detail') }}" >@lang('front.course_detail')</a>
 								</li>
 							</ul>
 						</li>

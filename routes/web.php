@@ -26,6 +26,8 @@ Route::get('gareeb-nawaz-markaz', function() {
 
 Route::match(['POST','GET'],'staff-details', [HomeController::class, 'staffDetail'])->name('staff_details');
 
+Route::match(['POST','GET'],'course-details', [HomeController::class, 'courseDetail'])->name('course_detail');
+
 Route::match(['POST','GET'],'/page/{page}', [HomeController::class, 'page'])->name('page')->where('page',"examination|academic");
 
 Route::get('lang/change/{lang}',[LanguageController::class,'change'])->name('change');

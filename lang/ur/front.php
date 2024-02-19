@@ -44,4 +44,8 @@ return [
 	'name'           => 'نام',
 	'Qualification'  => 'قابلیت',
 	'Speciality'  	 => 'خاصیت',
+	'course_details'  	 => 'کورس کی تفصیلات',
+	'course_name'  => 'کورس کا نام',
+	'course_duration'  => 'کورس کا دورانیہ',
+	'course_details'  => 'کورس کی تفصیلات',
 ];

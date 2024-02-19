@@ -122,10 +122,10 @@
         $(row).attr('row-course_id',data.id);
         $(row).attr('row-course_name',data.course_name);
         $(row).attr('row-course_duration',data.course_duration);
-        $(row).attr('row-course_details',data.course_details);
+        $(row).attr('row-course_details',data.course_details_show);
         $(row).attr('row-course_name_ur',data.course_name_ur);
         $(row).attr('row-course_duration_ur',data.course_duration_ur);
-        $(row).attr('row-course_details_ur',data.course_details_ur);
+        $(row).attr('row-course_details_ur',data.course_details_ur_show);
       }
     });
   });

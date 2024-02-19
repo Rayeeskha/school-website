@@ -28,6 +28,10 @@ class CourseRepository extends BaseRepository
                 return Str::limit($row->course_details,30);
             })->editColumn('course_details_ur', function($row){
                 return Str::limit($row->course_details_ur,30);
+            })->addColumn('course_details_show', function($row){
+                return $row->course_details;
+            })->addColumn('course_details_ur_show', function($row){
+                return $row->course_details_ur;
             })->editColumn('status', function($row){
                 $active = $row->status == '1' ? "checked" : '';
                 $x = ($active) ? " switch3-checked " : " ";
