@@ -3,15 +3,16 @@
 @section('meta_keywords','Gareeb Nawaz Markaz')
 @section('meta_description', 'Gareeb Nawaz Markaz')
 @section('container')
+
 <!-- Slider -->
 <div class="home-carousel"></div>
 <!-- Home Contend -->
-<div class="card">
-	<div class="card-body">
-		<div class="container">
+<div class="card rtl-card" >
+	<div class="card-body"  >
+		<div class="container" >
 			<div class="row">
-			<div class="col-md-12 col-12">
-				<h2 class="title mt-6">@lang('intro.intro_title')</h2>
+			<div class="col-md-12 col-12 rtl-text">
+				<h2  class="title mt-6 urdu-title">@lang('intro.intro_title')</h2>
 				<p> @lang('intro.intro1') </p>
 				<p> @lang('intro.intro2') </p>
 				<p>@lang('intro.intro3')</p>

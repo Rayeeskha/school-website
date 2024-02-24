@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
+<html lang="en" >
 <head>
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width,height=device-height,initial-scale=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Gareeb Nawaz Markaz</title>
 	<meta name="keywords" content="Gareeb Nawaz Markaz">
 	<meta name="description" content="Gareeb Nawaz Markaz">
@@ -33,14 +33,37 @@
 	<link rel="stylesheet" href="{{ asset('frontend/assets/css/carousel.css') }}">
 	<script defer src="{{ asset('frontend/assets/js/carousel.js') }}"></script>
 	
+
 	<style type="text/css">
 		.nav-style li a{border-bottom:  1px solid silver}
-		@font-face {
-			font-family: 'Jameel Noori Nastaleeq';
-			src: url('https://www.fontsaddict.com/fontface/jameel-noori-nastaleeq.ttf');
-			}
-			body {
-			font-family: 'Jameel Noori Nastaleeq', serif;
-			}
+		
+		@if(session()->get('locale') == 'ur')
+        p{font-size: 22px;font-family: Arial, sans-serif;  font-style: italic;  font-weight: 400;}
+        nav ul li a{font-size: 20px !important;text-align: right;}
+        @media only screen and (max-width: 767px) {
+		    p {
+		        font-size: 25px;font-family: Arial, sans-serif;  font-style: italic;  font-weight: 400;
+		    }
+		}
+		@media only screen and (max-width: 991px) {
+		  p {
+		    font-size: 25px;font-family: Arial, sans-serif;  font-style: italic;  font-weight: 400;
+
+		  }
+		}
+		.rtl-card {
+		    direction: rtl;
+		}
+
+		.rtl-text {
+		    text-align: right;
+		}
+		.urdu-title{font-size: 35px; font-family: Arial, sans-serif;  font-style: italic;  font-weight: 400; }
+		.widget-list li a{font-size: 20px}
+		.widget-title {font-size: 25px !important}
+		.urdu-text{font-size: 20px;font-family: Arial, sans-serif;  font-style: italic;  font-weight: 400;}
+		@endif
 	</style>
+
+
 </head>

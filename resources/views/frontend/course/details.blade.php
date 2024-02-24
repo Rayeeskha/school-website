@@ -31,9 +31,9 @@
    <div class="row">
       @foreach($courses ?? [] as $course)
       <div class="col-md-3">
-         <div class="card">
+         <div class="card ">
             <div class="card-body">
-               <div dir="{{ session()->get('locale') == 'ur' ? 'rtl': 'ltr' }}">
+               <div  class="rtl-text">
                   @php
                   $course_name = $course->course_name; 
                   $course_duration = $course->course_duration; 

@@ -28,7 +28,7 @@
 				<div class="header-dropdown">
 					<a href="{{ url($languageUrl) }}" class="language">@lang($language)</a>
 					<div class="header-menu">
-						<ul>
+						<ul >
 							@if(session()->get('locale') == 'ur')
 								<li><a href="{{ url('lang/change/en') }}">@lang('front.English')</a></li>
 							@else
@@ -58,10 +58,10 @@
 		</div><!-- End .container -->
 	</div><!-- End .header-middle -->
 
-	<div class="header-bottom sticky-header">
-		<div class="container">
-			<div class="header-left">
-				<nav class="main-nav">
+	<div class="header-bottom sticky-header ">
+		<div class="container ">
+			<div class="header-left rtl-card">
+				<nav class="main-nav ">
 					<ul class="menu">
 						<li class="active">
 							<a href="#!">

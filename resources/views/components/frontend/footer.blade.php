@@ -28,7 +28,7 @@
 
 					<div class="col-sm-4 col-lg-2 col-6">
 						<div class="widget">
-							<h4 class="widget-title">@lang('front.help_nd_info') </h4><!-- End .widget-title -->
+							<h4 class="widget-title  urdu-title">@lang('front.help_nd_info') </h4><!-- End .widget-title -->
 
 							<ul class="widget-list">
 								<li><a href="#!">@lang('front.about_us') </a></li>
