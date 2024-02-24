@@ -130,11 +130,11 @@
 
 							<a href="{{ route('page', 'examination') }}">@lang('front.admission')</a></li>
 						<li>
-							<a href="#!" >@lang('front.staff_details')</a>
+							<a href="{{ route('staff_details') }}" >@lang('front.staff_details')</a>
 						</li>
 						
 						<li>
-							<a href="#!" >@lang('front.course_detail')
+							<a href="{{ route('course_detail') }}" >@lang('front.course_detail')
 							</a>
 						</li>
 					</ul>
@@ -160,7 +160,7 @@
 										</ul>
 									</li>
 									<li>
-										<a href="#!">@lang('front.img_nd_galary')</a>
+										<a href="{{ route('gallary','Image') }}">@lang('front.img_nd_galary')</a>
 									</li>
 									<li><a href="#!" class="sf-with-ul">@lang('front.Events')</a>
 										<ul>
