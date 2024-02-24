@@ -98,6 +98,7 @@ $('.addMedia').click(function() {
   $('.text-danger').html('');
   $('.course_id').val('');
   $('.image_show').html('');
+  $('.media').html('');
   $('.validateForm')[0].reset();
   mediaCategory();
   $('.modal-title').html('Add Media');
@@ -119,13 +120,75 @@ $(document).on('click','.editMedia',function(){
   $('.media_title_ur').val(tr.attr('row-media_title_ur'));
   $('.media_desc_ur').val(tr.attr('row-media_desc_ur'));
   mediaCategory(tr.attr('row-media_type'));
+
+  let val = tr.attr('row-media_type'); 
+  if (val == 'Audio') {
+    audio(tr.attr('row-media'));
+  }else if(val=='Literature'){
+    literature(tr.attr('row-media'));
+  }else if(val=='Events'){
+    events(tr.attr('row-media'));
+  }
   $('.image_show').html(tr.attr('row-photo'));
   $('.mediaModal').modal({ backdrop: 'static', keyboard: false });
   $('.mediaModal').modal('show');
 });
 
+// media_type_arr
+$(document).on('change','.media_type_arr',function(){
+  let val = $(this).val();
+  if (val == 'Audio') {
+    audio();
+  }else if(val=='Literature'){
+    literature();
+  }else if(val=='Events'){
+    events();
+  }
+});
+
+function literature(media=''){
+  let types = ['Urdu', 'English'];
+  let options = '<option>Select One</option>';  
+  $.each(types, function(index, type) {
+    let selected = '';
+    if (media === type) {
+      selected = 'selected';
+    }
+    options += '<option value="' + type + '" ' + selected + '>' + type + '</option>';
+  });
+  $('.media').html(options);
+}
+
+function events(media=''){
+  let types = ['Urshe 1', 'Urshe 2'];
+  let options = '<option>Select One</option>';  
+  $.each(types, function(index, type) {
+    let selected = '';
+    if (media === type) {
+      selected = 'selected';
+    }
+    options += '<option value="' + type + '" ' + selected + '>' + type + '</option>';
+  });
+  $('.media').html(options);
+}
+
+
+
+function audio(media=''){
+  let types = ['Weekly Q & A', 'Dars-e-Hadith', 'Hamd & Naat','Speeches'];
+  let options = '<option>Select One</option>';  
+  $.each(types, function(index, type) {
+    let selected = '';
+    if (media === type) {
+      selected = 'selected';
+    }
+    options += '<option value="' + type + '" ' + selected + '>' + type + '</option>';
+  });
+  $('.media').html(options);
+}
+
 function mediaCategory(mediaType='') {
-  let types = ['Image', 'Pdf', 'Video'];
+  let types = ['Image', 'Audio', 'Video','Literature','Events'];
   let options = '<option>Select One</option>';
   
   $.each(types, function(index, type) {

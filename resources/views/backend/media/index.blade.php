@@ -83,6 +83,11 @@
                   <span class="text-danger Errmedia_type"></span>
                 </div>
                 <div class="col-md-12">
+                  <label>Type</label>
+                  <select name="media" class="form-control media"></select>
+                  <span class="text-danger Errmedia"></span>
+                </div>
+                <div class="col-md-12">
                   <label>Media Photo</label>
                   <input type="file" name="photo" class="form-control image media_photo">
                   <span class="text-danger Errphoto"></span>
@@ -131,6 +136,7 @@
         $(row).attr('row-media_title_ur',data.media_title_ur);
         $(row).attr('row-media_desc_ur',data.media_desc_ur);
         $(row).attr('row-media_type',data.media_type);
+        $(row).attr('row-media',data.media);
       }
     });
   });
