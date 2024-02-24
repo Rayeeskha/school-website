@@ -6,6 +6,7 @@ use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use App\Models\Teacher;
 use App\Models\Course;
+use App\Models\Media;
 
 class HomeController extends Controller
 {
@@ -28,6 +29,18 @@ class HomeController extends Controller
     public function courseDetail(){
        $courses = Course::wherestatus(1)->get();
        return view('frontend.course.details', compact('courses')); 
+    }
+
+    public function gallary($type='', $val=''){
+        $args = [];
+        if (!empty($type) && !empty($val)) {
+            $args += ['media_type' => $type, 'media'=> $val];
+        }else{
+            $args += ['media_type' => $type];
+        }
+        $args += ['status' => 1];
+        $medias = Media::where($args)->get();
+        return view('frontend.media.index', compact('medias'));
     }
 
 }

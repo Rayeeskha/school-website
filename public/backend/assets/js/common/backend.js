@@ -96,7 +96,7 @@ $(document).on('click','.editCourse',function(){
 // addMedia
 $('.addMedia').click(function() {
   $('.text-danger').html('');
-  $('.course_id').val('');
+  $('.media_id').val('');
   $('.image_show').html('');
   $('.media').html('');
   $('.validateForm')[0].reset();

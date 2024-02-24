@@ -156,7 +156,7 @@
 									</ul>
 								</li>
 								<li>
-									<a href="#!">@lang('front.img_nd_galary')</a>
+									<a href="{{ route('gallary','Image') }}">@lang('front.img_nd_galary')</a>
 								</li>
 								<li><a href="#!" class="sf-with-ul"> @lang('front.Events')</a>
 									<ul>

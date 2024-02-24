@@ -48,4 +48,5 @@ return [
 	'course_name'  => 'کورس کا نام',
 	'course_duration'  => 'کورس کا دورانیہ',
 	'course_details'  => 'کورس کی تفصیلات',
+	'media' => 'میڈیا',
 ];

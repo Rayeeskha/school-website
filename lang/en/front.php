@@ -48,4 +48,5 @@ return [
 	'course_name'  => 'Course Name',
 	'course_duration'  => 'Course Duration',
 	'course_details'  => 'Course Details',
+	'media' => 'Media',
 ];
