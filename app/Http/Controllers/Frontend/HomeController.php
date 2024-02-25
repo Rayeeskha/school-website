@@ -11,7 +11,7 @@ use App\Models\Media;
 class HomeController extends Controller
 {
     public function __invoke(){
-        return view('frontend.index1');
+        return view('frontend.index');
     }
     public function website(){
         return view('frontend.index');

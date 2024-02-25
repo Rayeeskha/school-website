@@ -6,3 +6,4 @@
 </main>
 <x-frontend.footer />
 <x-frontend.js />
+<x-frontend.carousel-slider-js />

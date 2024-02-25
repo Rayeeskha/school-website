@@ -31,7 +31,7 @@
 	<link rel="stylesheet" href="{{ asset('frontend/assets/css/theme.css') }}">
 	<link rel="stylesheet" href="{{ asset('frontend/assets/css/custom.css') }}">
 	<link rel="stylesheet" href="{{ asset('frontend/assets/css/carousel.css') }}">
-	<script defer src="{{ asset('frontend/assets/js/carousel.js') }}"></script>
+	<!-- <script defer src="{{ asset('frontend/assets/js/carousel.js') }}"></script> -->
 	
 
 	<style type="text/css">
