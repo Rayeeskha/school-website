@@ -36,33 +36,20 @@
 
 	<style type="text/css">
 		.nav-style li a{border-bottom:  1px solid silver}
-		@if(session()->get('locale') == 'en')
-		@media only screen and (max-width: 767px) {
-		    p {
-		        font-size: 20px;font-family: Arial, sans-serif;  font-style: italic;  font-weight: 400;
-		    }
-		}
-		@media only screen and (max-width: 991px) {
-		  p {
-		    font-size: 20px;font-family: Arial, sans-serif;  font-style: italic;  font-weight: 400;
-
-		  }
-		}
-		@endif
 		
-		@if(session()->get('locale') == 'ur')
+		
         @media only screen and (max-width: 767px) {
 		    p {
-		        font-size: 25px;font-family: Arial, sans-serif;  font-style: italic;  font-weight: 400;
+		        font-size: 30px;font-family: Arial, sans-serif;  font-style: italic;  font-weight: 400;
 		    }
 		}
 		@media only screen and (max-width: 991px) {
 		  p {
-		    font-size: 25px;font-family: Arial, sans-serif;  font-style: italic;  font-weight: 400;
+		    font-size: 30px;font-family: Arial, sans-serif;  font-style: italic;  font-weight: 400;
 
 		  }
 		}
-		
+		@if(session()->get('locale') == 'ur')
         p{font-size: 22px;font-family: Arial, sans-serif;  font-style: italic;  font-weight: 400;}
         nav ul li a{font-size: 20px !important;text-align: right;}
 		.rtl-card {
