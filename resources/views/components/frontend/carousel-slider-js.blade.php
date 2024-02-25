@@ -6,7 +6,7 @@ class Carousel {
   constructor(el) {
     this.el = el;
     this.carouselData = sliderData;
-    this.carouselInView = [1, 2, 3, 4, 5];
+    this.carouselInView = [1, 2, 3, 4, 5,6,7,8,,9,10,11];
     this.carouselContainer;
     this.carouselPlayState;
     this.slideInterval = 1500; // Interval between slides in milliseconds
