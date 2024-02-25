@@ -37,7 +37,6 @@
 	<style type="text/css">
 		.nav-style li a{border-bottom:  1px solid silver}
 		
-		
         @media only screen and (max-width: 767px) {
 		    p {
 		        font-size: 24px;font-family: Arial, sans-serif;  font-style: italic;  font-weight: 400;
@@ -52,18 +51,20 @@
 		@if(session()->get('locale') == 'ur')
         p{font-size: 22px;font-family: Arial, sans-serif;  font-style: italic;  font-weight: 400;}
         nav ul li a{font-size: 20px !important;text-align: right;}
-		.rtl-card {
-		    direction: rtl;
-		}
+		.rtl-card { direction: rtl; }
 
-		.rtl-text {
-		    text-align: right;
-		}
+		.rtl-text { text-align: right; }
 		.urdu-title{font-size: 35px; font-family: Arial, sans-serif;  font-style: italic;  font-weight: 400; }
 		.widget-list li a{font-size: 20px}
 		.widget-title {font-size: 25px !important}
 		.urdu-text{font-size: 20px;font-family: Arial, sans-serif;  font-style: italic;  font-weight: 400;}
 		@endif
+    
+    .title-1{ font-size: 32px; font-family: sans-serif !important; font-weight: bold; }
+
+    .para p{ color: #000000; font-family: sans-serif !important; }
+
+    /*.home{ color: blue; }*/
 	</style>
 
 

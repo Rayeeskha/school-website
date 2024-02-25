@@ -11,8 +11,8 @@
 	<div class="card-body"  >
 		<div class="container" >
 			<div class="row">
-			<div class="col-md-12 col-12 rtl-text">
-				<h2  class="title mt-6 urdu-title">@lang('intro.intro_title')</h2>
+			<div class="col-md-12 col-12 rtl-text para">
+				<h2  class="title mt-2 urdu-title title-1">@lang('intro.intro_title')</h2>
 				<p> @lang('intro.intro1') </p>
 				<p> @lang('intro.intro2') </p>
 				<p>@lang('intro.intro3')</p>

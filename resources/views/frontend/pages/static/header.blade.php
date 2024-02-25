@@ -2,7 +2,7 @@
 	<div class="container">
 		<h1 class="page-title">{{ $heading }}</h1>
 		<p>
-			<a href="/">@lang('front.Home') </a> / {{ $heading }} 
+			<a href="/" class="home">@lang('front.Home') </a> / {{ $heading }} 
 		</p>
 	</div><!-- End .container -->
 </div><!-- End .page-header -->

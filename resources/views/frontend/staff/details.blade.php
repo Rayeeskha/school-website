@@ -8,11 +8,11 @@
 <br><br>
   <style>
     .teacher-card {
-      border: 1px solid #ccc;
-      border-radius: 10px;
+      border: 2px solid #ccc;
+      border-radius: 20px;
       overflow: hidden;
       margin-bottom: 20px;
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
       transition: transform 0.3s ease;
     }
 
@@ -39,7 +39,7 @@
     .teacher-card p.card-text {
       margin-bottom: 0;
       font-size: 14px;
-      color: #777;
+      color: #000000;
     }
 
     .teacher-contact-info {
