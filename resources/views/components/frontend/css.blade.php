@@ -40,12 +40,12 @@
 		
         @media only screen and (max-width: 767px) {
 		    p {
-		        font-size: 25px;font-family: Arial, sans-serif;  font-style: italic;  font-weight: 400;
+		        font-size: 24px;font-family: Arial, sans-serif;  font-style: italic;  font-weight: 400;
 		    }
 		}
 		@media only screen and (max-width: 991px) {
 		  p {
-		    font-size: 25px;font-family: Arial, sans-serif;  font-style: italic;  font-weight: 400;
+		    font-size: 24px;font-family: Arial, sans-serif;  font-style: italic;  font-weight: 400;
 
 		  }
 		}
