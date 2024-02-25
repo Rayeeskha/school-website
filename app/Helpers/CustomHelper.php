@@ -6,7 +6,7 @@ use App\Models\Slider;
 
 class CustomHelper{
 	static function getSliderData(){
-		$sliderData = Slider::where('status', 1)->orderBy('id', 'DESC')->get();
+		$sliderData = Slider::where('status', 1)->orderBy('id', 'DESC')->limit(9)->get();
 		$formattedData = $sliderData->map(function ($item) {
             return [
                 'id' => $item->id,
