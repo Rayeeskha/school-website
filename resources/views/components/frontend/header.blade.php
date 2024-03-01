@@ -115,7 +115,7 @@
 							<ul class="nav-style">
 								<li><a href="#!">@lang('front.q_nd_library') </a></li>
 								<li><a href="#!">@lang('front.Markazi_dar_al_Ifta') </a></li>
-								<li><a href="#!">@lang('front.qadri')</a></li>
+								<!-- <li><a href="#!">@lang('front.qadri')</a></li> -->
 							</ul>
 						</li>
 
@@ -194,7 +194,10 @@
 							<a href="#!">@lang('front.contact_us') </a>
 							<ul class="nav-style">
 								<li>
-									<a href="#!">@lang('front.taaj_al_sariha') </a>
+									<a href="#!">
+										Ghareeb Nawaz Markaz
+
+								</a>
 								</li>
 								<li>
 									<a href="#!">@lang('front.the_principle') </a>

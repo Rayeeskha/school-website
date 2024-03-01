@@ -33,38 +33,83 @@
 	<link rel="stylesheet" href="{{ asset('frontend/assets/css/carousel.css') }}">
 	<!-- <script defer src="{{ asset('frontend/assets/js/carousel.js') }}"></script> -->
 	
-
+	<link href='https://fonts.googleapis.com/css?family=Noto Nastaliq Urdu' rel='stylesheet'>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Nastaliq+Urdu:wght@400..700&display=swap" rel="stylesheet">
 	<style type="text/css">
+		*{
+			font-family: "Noto Nastaliq Urdu", serif !important;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+	word-spacing:10px !important;
+		}
+
+/* 
+		.para1{
+			color:green !important;
+			font-family: "Noto Nastaliq Urdu", serif !important;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+		} */
+		
+		body{
+    /* font-family: 'Noto Nastaliq Urdu'; */
+		font-family: "Noto Nastaliq Urdu", serif !important;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+		
+		font-size: 22px;
+		
+}
 		.nav-style li a{border-bottom:  1px solid silver}
 		
         @media only screen and (max-width: 767px) {
 		    p {
-		        font-size: 24px;font-family: Arial, sans-serif;  font-style: italic;  font-weight: 400;
+		        font-size: 24px;
+						/* font-family: Arial, sans-serif;  */
+						 /* font-style: italic;  */
+						  font-weight: 400;
 		    }
 		}
 		@media only screen and (max-width: 991px) {
 		  p {
-		    font-size: 24px;font-family: Arial, sans-serif;  font-style: italic;  font-weight: 400;
+		    font-size: 24px;f
+				/* ont-family: Arial, sans-serif;   */
+				/* font-style: italic;  */
+				 font-weight: 400;
 
 		  }
-		}
-		@if(session()->get('locale') == 'ur')
-        p{font-size: 22px;font-family: Arial, sans-serif;  font-style: italic;  font-weight: 400;}
+		} 
+		 @if(session()->get('locale') == 'ur')
+        p{font-size: 22px;
+					/* font-family: Arial, sans-serif;    */
+					 font-weight: 400;}
         nav ul li a{font-size: 20px !important;text-align: right;}
 		.rtl-card { direction: rtl; }
 
 		.rtl-text { text-align: right; }
-		.urdu-title{font-size: 35px; font-family: Arial, sans-serif;  font-style: italic;  font-weight: 400; }
+		.urdu-title{font-size: 35px;
+			 /* font-family: Arial, sans-serif;   */
+			  font-weight: 400; }
 		.widget-list li a{font-size: 20px}
 		.widget-title {font-size: 25px !important}
-		.urdu-text{font-size: 20px;font-family: Arial, sans-serif;  font-style: italic;  font-weight: 400;}
-		@endif
+		.urdu-text{font-size: 20px;
+			/* font-family: Arial, sans-serif;  */
+			   font-weight: 400;}
+		@endif */
     
-    .title-1{ font-size: 32px; font-family: sans-serif !important; font-weight: bold; }
+     .title-1{ 
+			font-size: 32px;
+			 /* font-family: sans-serif !important;  */
+			 font-weight: bold; }
 
-    .para p{ color: #000000; font-family: sans-serif !important; }
+    .para p{ color: #000000;  !important; } 
 
-    /*.home{ color: blue; }*/
+    /* .home{ color: blue; } */
 	</style>
 
 
