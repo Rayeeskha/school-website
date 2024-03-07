@@ -61,7 +61,7 @@
    <div class="row">
       @foreach($teachers ?? [] as $teacher)
       <div class="col-lg-3 col-md-4 col-sm-6">
-         <div class="teacher-card">
+         <div class="teacher-card" style="height:270px; width: 100%">
             <img src="{{ asset($teacher->photo) }}" class="card-img-top" alt="teacher-photo" style="width: 100%; height: 250px; object-position: top;">
             @php
             $dir = "ltr";
@@ -71,7 +71,7 @@
             $dir = "rtl";
             }
             @endphp
-            <div class="card-body " dir="{{ $dir }}" style="height:270px; width: 100%">
+            <div class="card-body " dir="{{ $dir }}" style="height:auto">
                <h5 class="card-title rtl-text">
                   <div class="row">
                      <div class="col-12">
