@@ -21,21 +21,21 @@
     }
 
     .teacher-card .card-img-top {
-      height: 200px;
+      height: 180px;
       object-fit: cover;
       border-bottom: 1px solid #ddd;
     }
 
     .teacher-card .card-body {
-      padding: 20px;
+      padding: 10px;
     }
 
     .teacher-card h5.card-title {
-      margin-bottom: 15px;
+      margin-bottom: 5px;
       font-size: 18px;
       color: #333;
     }
-
+    
     .teacher-card p.card-text {
       margin-bottom: 0;
       font-size: 14px;
@@ -47,6 +47,7 @@
       align-items: center;
       margin-bottom: 10px;
     }
+    
 
     .teacher-contact-info img {
       margin-right: 10px;
@@ -59,6 +60,16 @@
         height: 150px;
       }
     }
+    .span1{
+      line-height: 32px;
+    }
+    .urdu-text{
+      font-size:18px;
+      
+
+    }
+
+    
   </style>
 
   <div class="container-fluid rtl-card">
@@ -75,30 +86,31 @@
           $dir = "rtl";
           }
           @endphp
-          <div class="card-body " dir="{{ $dir }}" style="height: 220px">
+          <div class="card-body " dir="{{ $dir }}" style="height:auto">
             <h5 class="card-title rtl-text">
               <div class="row">
-              	<div class="col-md-6">
-              		<strong>@lang('front.name'):</strong> <span class="urdu-text"> {{ $name }}</span>
-              	</div>
-              	<div class="col-md-6">
-              		<div class="teacher-contact-info">
-  		            	<img src="frontend/assets/images/phone2.png" alt="phone-icon" > {{ $teacher->phone }}
-  		            </div>
-              	</div>
-                <div class="col-md-12" style="border-top: 1px solid silver">
+                <div class="col-12">
+                  <strong>@lang('front.name'):</strong> <span class="urdu-text"> {{ $name }}</span>
+                </div>
+                <div class="col-md-6">
+                  <span class="teacher-contact-info" style="padding-top:5px; " >
+                    <img src="frontend/assets/images/phone2.png" class="plogo" alt="phone-icon" > <span class="mn"> {{ $teacher->phone }} <span> 
+                  </span>
+              </div>    
+                <div class="col-md-12" style="border-top:1px solid silver; padding-top: 5px;>
                    
-                  @if(session()->get('locale') == 'ur')
-                   {{ Str::limit($teacher->serving_to_inst_ur, 40) }}<br>{{ Str::limit($teacher->education_detail_ur, 60) }}
+                <span class="span1" style="font-weight:700">@if(session()->get('locale') == 'ur')
+                  <span class="uu">  {{ Str::limit($teacher->serving_to_inst_ur, 40) }}<br></span>
+                  <span class="span1">{{ Str::limit($teacher->education_detail_ur, 60) }}</span>
                   @else
-                   {{ Str::limit($teacher->serving_to_inst,40) }}<br>{{ Str::limit($teacher->education_detail, 60) }}
+                  <span class="span1 span4">{{ Str::limit($teacher->serving_to_inst,40) }}</span><br> <span class="span1">{{ Str::limit($teacher->education_detail, 60) }}</span>
                   @endif
-                <!-- </span> -->
+                </span> 
                 </div>
               </div>
             </h5>
 
-            <p class="card-text rtl-text" style="border-top: 1px solid silver">
+            <p class="card-text rtl-text" style="border-top: 1px solid silver"> 
               @php
               $qalification = $teacher->qualification;
               $specility = $teacher->specility;
@@ -108,22 +120,19 @@
               }
               @endphp
               <div class="row">
-                <div class="col-md-6 ">
-                  <strong>@lang('front.Qualification'):</strong><br> <span class="urdu-text">{{ $qalification }}</span>
+                <div class="col-6 quali-spe" >
+                   <div class="quali-spe1" >@lang('front.Qualification'): </div>  <span class="urdu-text quali-spe2 ">{{ $qalification }}</span>
                 </div>
-                <div class="col-md-6">
-                  <strong>@lang('front.Speciality'):</strong><br> <span class="urdu-text">{{ $specility }}</span>
+                <div class="col-6 quali-spe">
+                   <div class="quali-spe1">@lang('front.Speciality'):</div> 
+                   <span class="urdu-text strng1 quali-spe2 ">{{ $specility }}</span>
                 </div>
               </div>
-            </p>
+              </p>
           </div>
         </div>
       </div>
       @endforeach
     </div>
   </div>
-
-<br><br>
-
-
 @endsection
