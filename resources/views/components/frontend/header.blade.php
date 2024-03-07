@@ -194,10 +194,10 @@
 							<a href="#!">@lang('front.contact_us') </a>
 							<ul class="nav-style">
 								<li>
-									<a href="#!">
+									<!-- <a href="#!">
 										Ghareeb Nawaz Markaz
 
-								</a>
+								</a> -->
 								</li>
 								<li>
 									<a href="#!">@lang('front.the_principle') </a>
