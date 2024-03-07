@@ -67,11 +67,10 @@
          width:15px !important;
          height:10px;
          }
-         .quali-spe{
-         /* margin:0px; */
+         /*.quali-spe{
          position: absolute;
          left:28px;
-         }
+         }*/
          .quali-spe .quali-spe1{
          font-size:15px !important;
          font-weight:bold;
@@ -109,11 +108,10 @@
          .mn{
          font-size:18px;
          }
-         .quali-spe{
-         /* margin:0px; */
+         /*.quali-spe{
          position: absolute;
          left:30px;
-         }
+         }*/
          .quali-spe .quali-spe1{
          font-size:15px !important;
          font-weight:bold;
@@ -146,15 +144,12 @@
          .quali-spe .quali-spe2 {
          font-size:13px !important;
          }
-         .quali-spe{
-         /* margin:0px; */
+         /*.quali-spe{
          position: absolute;
          left:30px;
-         }
+         }*/
          p {
          font-size: 18px;
-         /* font-family: Arial, sans-serif;  */
-         /* font-style: italic;  */
          font-weight: 400;
          }
          .teacher-contact-info img {
@@ -167,32 +162,26 @@
          }
          }
          @media only screen and (max-width: 991px) {
-         .quali-spe .quali-spe1{
-         font-size:15px !important;
-         font-weight:bold;
-         }
-         .quali-spe .quali-spe2 {
-         font-size:13px !important;
-         }
-         .quali-spe{
-         /* margin:0px; */
-         position: absolute;
-         left:30px;
-         }
-         .teacher-contact-info img {
-         margin-right: 50px !important;
-         width: 15px !important;
-         height: 15px !important;
-         margin-top:10px !important;
-         width:15px !important;
-         height:10px;
-         }
-         p {
-         font-size: 18px;
-         /* ont-family: Arial, sans-serif;   */
-         /* font-style: italic;  */
-         font-weight: 400;
-         }
+            .quali-spe .quali-spe1{
+            font-size:15px !important;
+            font-weight:bold;
+            }
+            .quali-spe .quali-spe2 {
+            font-size:13px !important;
+            }
+            /*.quali-spe{
+            position: absolute;
+            left:30px;
+            }*/
+            .teacher-contact-info img {
+            margin-right: 50px !important;
+            width: 15px !important;
+            height: 15px !important;
+            margin-top:10px !important;
+            width:15px !important;
+            height:10px;
+            }
+            p { font-size: 18px; font-weight: 400; }
          } 
          @if(session()->get('locale') == 'ur')
          p{font-size: 18px;
@@ -206,14 +195,18 @@
          font-weight: 400; }
          .widget-list li a{font-size: 20px}
          .widget-title {font-size: 25px !important}
-         .urdu-text{font-size: 20px;
-         /* font-family: Arial, sans-serif;  */
+         .urdu-text{font-size: 18px;
          font-weight: 400;}
-         @endif */
-         .title-1{ 
-         font-size: 32px;
+
+         /*.quali-spe{
+         position: absolute;
+         left:30px;
+         }*/
+         @endif 
+        /* .title-1{ 
+         font-size: 30px;*/
          /* font-family: sans-serif !important;  */
-         font-weight: bold; }
+         /*font-weight: bold; }*/
          .para p{ color: #000000;  !important; } 
          /* .home{ color: blue; } */
       </style>
