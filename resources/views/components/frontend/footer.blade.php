@@ -32,7 +32,7 @@
 
 							<ul class="widget-list">
 								<li><a href="#!">@lang('front.about_us') </a></li>
-								<li><a href="#!"> @lang('front.privacy_policy') </a></li>
+								<!-- <li><a href="#!"> @lang('front.privacy_policy') </a></li> -->
 								<li><a href="#!">@lang('front.aims_nd_obj') </a></li>
 							</ul><!-- End .widget-list -->
 						</div><!-- End .widget -->
