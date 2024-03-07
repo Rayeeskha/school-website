@@ -71,7 +71,7 @@
             $dir = "rtl";
             }
             @endphp
-            <div class="card-body " dir="{{ $dir }}" style="height:auto">
+            <div class="card-body " dir="{{ $dir }}" style="height:270px; width: 100%">
                <h5 class="card-title rtl-text">
                   <div class="row">
                      <div class="col-12">
@@ -84,7 +84,7 @@
                            {{ $teacher->phone }} <span> 
                            </span>
                      </div>
-                     <div class="col-md-12" style="border-top:1px solid silver; padding-top: 5px;>
+                     <div class="col-md-12" style="border-top:1px solid silver; padding-top: 5px;">
                         <span class="span1" style="font-weight:700">@if(session()->get('locale') == 'ur')
                      <span class="uu">  {{ Str::limit($teacher->serving_to_inst_ur, 40) }}<br></span>
                      <span class="span1">{{ Str::limit($teacher->education_detail_ur, 60) }}</span>
