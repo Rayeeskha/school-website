@@ -10,6 +10,7 @@
    border: 1px solid #ddd;
    border-radius: 8px;
    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+   margin-bottom: 10px;
    }
    .card-body {
    padding: 20px;
@@ -31,7 +32,7 @@
    <div class="row">
       @foreach($courses ?? [] as $course)
       <div class="col-md-3">
-         <div class="card ">
+         <div class="card " style="height: 300px">
             <div class="card-body">
                <div  class="rtl-text">
                   @php
