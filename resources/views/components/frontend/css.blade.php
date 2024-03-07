@@ -69,7 +69,7 @@
          }
          .quali-spe{
          /* margin:0px; */
-         postion:absolute;
+         position: absolute;
          left:28px;
          }
          .quali-spe .quali-spe1{
@@ -111,7 +111,7 @@
          }
          .quali-spe{
          /* margin:0px; */
-         postion:absolute;
+         position: absolute;
          left:30px;
          }
          .quali-spe .quali-spe1{
@@ -148,7 +148,7 @@
          }
          .quali-spe{
          /* margin:0px; */
-         postion:absolute;
+         position: absolute;
          left:30px;
          }
          p {
@@ -176,7 +176,7 @@
          }
          .quali-spe{
          /* margin:0px; */
-         postion:absolute;
+         position: absolute;
          left:30px;
          }
          .teacher-contact-info img {
