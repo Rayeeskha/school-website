@@ -200,3 +200,28 @@ function mediaCategory(mediaType='') {
   });
   $('.media_type_arr').html(options);
 }
+
+// Add Event
+$('.addEvent').click(function() {
+  $('.text-danger').html('');
+  $('.event_id').val('');
+  $('.validateForm')[0].reset();
+  $('.modal-title').html('Add Event');
+  $('.eventModal').modal({ backdrop: 'static', keyboard: false });
+  $('.eventModal').modal('show');
+});
+//editEvent
+$(document).on('click','.editEvent',function(){
+  $('.text-danger').html('');
+  $('.validateForm')[0].reset();
+  $('.modal-title').html('Edit Event');
+  let selector = $(this);
+  let tr  = selector.closest('tr'); 
+  $('.event_id').val(tr.attr('row-event_id'));
+  $('.title').val(tr.attr('row-title'));
+  $('.title_ur').val(tr.attr('row-title_ur'));
+  $('.description').val(tr.attr('row-description'));
+  $('.description_ur').val(tr.attr('row-description_ur'));
+  $('.eventModal').modal({ backdrop: 'static', keyboard: false });
+  $('.eventModal').modal('show');
+});

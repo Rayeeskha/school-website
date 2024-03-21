@@ -31,6 +31,10 @@ class CommonController extends Controller
                 case "teachers":
                 $data = \App\Models\Teacher::find($id);
                     break; 
+                case "events":
+                    $data = \App\Models\Event::find($id);
+                    break; 
+                    
             }
             if(!is_null($data)){
                 if ($chek_foreign > 0) {
@@ -68,7 +72,10 @@ class CommonController extends Controller
                     break;
                 case "teachers":
                 $data = \App\Models\Teacher::find($id);
-                    break;   
+                    break; 
+                case "events":
+                    $data = \App\Models\Event::find($id);
+                    break;  
             }
             if(!is_null($data)){
                 $data->status = $data->status == 1 ? 0 : 1;

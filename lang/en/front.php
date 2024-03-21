@@ -49,4 +49,5 @@ return [
 	'course_duration'  => 'Course Duration',
 	'course_details'  => 'Course Details',
 	'media' => 'Media',
+	'markaz_ghareeb' => 'Ghareeb Nawaz Markaz',
 ];

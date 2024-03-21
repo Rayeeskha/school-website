@@ -14,6 +14,7 @@ Route::middleware(['auth', 'verified'])->group(function () {
         'teacher' => \App\Http\Controllers\Backend\TeacherController::class,
         'course' => \App\Http\Controllers\Backend\CourseController::class,
         'media' => \App\Http\Controllers\Backend\MediaController::class,
+        'event' => \App\Http\Controllers\Backend\EventController::class,
     ]);
 
     Route::match(['POST','GET'],'/status-change', [\App\Http\Controllers\CommonController::class, 'changeDataTableStatus']);

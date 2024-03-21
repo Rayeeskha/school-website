@@ -114,7 +114,7 @@
 
 							<ul class="nav-style">
 								<li><a href="#!">@lang('front.q_nd_library') </a></li>
-								<li><a href="#!">@lang('front.Markazi_dar_al_Ifta') </a></li>
+								<!-- <li><a href="#!">@lang('front.Markazi_dar_al_Ifta') </a></li> -->
 								<!-- <li><a href="#!">@lang('front.qadri')</a></li> -->
 							</ul>
 						</li>
@@ -158,11 +158,12 @@
 								<li>
 									<a href="{{ route('gallary','Image') }}">@lang('front.img_nd_galary')</a>
 								</li>
-								<li><a href="#!" class="sf-with-ul"> @lang('front.Events')</a>
-									<ul>
+								<li><a href="#!"> @lang('front.Events')</a>
+								</li>
+									<!-- <ul>
 										<li><a href="#!"> @lang('front.Urshe1')</a></li>
 										<li><a href="#!">@lang('front.Urshe2')</a></li>
-									</ul>
+									</ul> -->
 								</li>
 							</ul>
 						</li>
@@ -194,10 +195,9 @@
 							<a href="#!">@lang('front.contact_us') </a>
 							<ul class="nav-style">
 								<li>
-									<!-- <a href="#!">
-										Ghareeb Nawaz Markaz
-
-								</a> -->
+									<a href="#!">
+										@lang('front.markaz_ghareeb')
+									</a>
 								</li>
 								<li>
 									<a href="#!">@lang('front.the_principle') </a>

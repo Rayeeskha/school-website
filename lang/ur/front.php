@@ -49,4 +49,5 @@ return [
 	'course_duration'  => 'کورس کا دورانیہ',
 	'course_details'  => 'کورس کی تفصیلات',
 	'media' => 'میڈیا',
+	'markaz_ghareeb' => 'غریب نواز مرکز',
 ];

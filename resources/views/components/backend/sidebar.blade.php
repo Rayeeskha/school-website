@@ -50,7 +50,7 @@
             </div>
          </li>
          <li class="nav-item">
-            <a class="nav-link menu-link " href="#!">
+            <a class="nav-link menu-link " href="{{ route('admin.event.index') }}">
                <i class="ri-layout-3-line"></i> <span data-key="t-widgets">Events</span>
             </a>
          </li>
