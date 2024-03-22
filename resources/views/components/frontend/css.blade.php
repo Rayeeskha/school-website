@@ -230,8 +230,13 @@
 
          .card-new-icon{
             position:absolute;
-             top:0px;
+             top:4px;
+         }
+         .card-new-icon-1{
              right:10px;
+         }
+         .card-new-icon-2{
+             left:10px;
          }
 
 

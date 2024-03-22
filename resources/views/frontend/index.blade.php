@@ -14,10 +14,10 @@
 				<div class="col-md-4 col-sm-12 col-12 rtl-text">
 					<h2  class="title mt-2 urdu-title title-1 mb-2">@lang('front.new_event')</h2>
 					@foreach(CustomHelper::getNewEvent() ?? [] as $event)
-					<div class="card mt-2" style="border:2px solid blue; border-radius:10px">
+					<div class="card mt-2" style="border:2px solid blue; border-radius:10px;padding-top: 6px">
 						<div class="card-body btn-card-body">
 							<h5 class="card-title ext-white">{{ Str::limit($event->title, 100) }}</h5>
-							<img src="{{ asset('frontend/assets/new.jpeg') }}" width="40px" height="20px" class="card-new-icon" alt="">
+							<img src="{{ asset('frontend/assets/new.jpeg') }}" width="40px" height="20px" class="card-new-icon {{ session()->get('locale') == 'en' ? 'card-new-icon-1' :'card-new-icon-2' }}" alt="">
 							<p class="card-text text-dark">{{ $event->description }}</p>
 							<a href="{{ asset($event->attachment) }}" download class="btn btn-success btn-card">@lang('front.download')</a>
 						</div>
