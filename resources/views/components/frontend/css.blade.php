@@ -4,9 +4,9 @@
       <meta charset="UTF-8">
       <meta http-equiv="X-UA-Compatible" content="IE=edge">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <title>Gareeb Nawaz Markaz</title>
-      <meta name="keywords" content="Gareeb Nawaz Markaz">
-      <meta name="description" content="Gareeb Nawaz Markaz">
+      <title>@yield('page_title')</title>
+      <meta name="keywords" content="@yield('meta_keywords','Darul Uloom Ahl-e-Sunnat Gharib Nawaz')">
+      <meta name="description" content="@yield('meta_keywords','Darul Uloom Ahl-e-Sunnat Gharib Nawaz')">
       <meta name="author" content="khan Rayees">
       <!-- Favicon -->
       <link rel="apple-touch-icon" sizes="180x180" href="{{ asset('frontend/assets/images/icons/apple-touch-icon.png') }}">
@@ -209,5 +209,31 @@
          /*font-weight: bold; }*/
          .para p{ color: #000000;  !important; } 
          /* .home{ color: blue; } */
+
+         .btn-card {
+             display: inline-flex;
+             font-size: 13px;
+             border-radius: 5px;
+             white-space: normal;
+             transition: all 0.3s;
+             padding:0px 10px 10px;
+             font-weight: 400;
+             line-height: 1.0;
+             min-width: 10px;
+         }
+         .btn-card-body{
+            padding: 0.1rem 1rem 1.4rem 1.4rem;
+         }
+         .btn-card-body p {
+            font-size: 1.5rem;
+         }
+
+         .card-new-icon{
+            position:absolute;
+             top:0px;
+             right:10px;
+         }
+
+
       </style>
    </head>

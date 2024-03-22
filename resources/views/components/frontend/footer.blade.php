@@ -5,7 +5,6 @@
 			        <div class="col-12">
 			            <button id="show-footer" title="Show Footer"><i class="icon-arrow-down"></i></button>
                         <button id="hide-footer" title="Hide Footer"><i class="icon-arrow-up"></i></button>
-
 			        </div>
 			    </div>
 				<div class="row desktop-show">
@@ -73,7 +72,7 @@
 
 		<div class="footer-bottom">
 			<div class="container">
-				<p class="footer-copyright">© 2024 Gareeb nawawaz Markaz. All Rights Reserved. By <a href="https://digisoftron.com/" target="_blank">Digi Softron Technology</a></p>
+				<p class="footer-copyright">© 2024 Darul Uloom Ahl-e-Sunnat Gharib Nawaz Markaz. All Rights Reserved. By <a href="https://digisoftron.com/" target="_blank">Digi Softron Technology</a></p>
 				<!-- End .footer-copyright -->
 				<figure class="footer-payments">
 					<img src="{{ asset('frontend/assets/images/card1.svg') }}" alt="Payment methods" height="20">

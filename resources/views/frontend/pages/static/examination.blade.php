@@ -1,7 +1,7 @@
 @extends('frontend.layouts.app')
-@section('page_title','Gareeb Nawaz Markaz Examination')
-@section('meta_keywords','Gareeb Nawaz Markaz Examination')
-@section('meta_description', 'Gareeb Nawaz Markaz Examination')
+@section('page_title',Lang::get('front.ghareeb_nawaz'). " ".Lang::get('examination.EXAMINATION'))
+@section('meta_keywords',Lang::get('front.ghareeb_nawaz'). " ". Lang::get('examination.EXAMINATION'))
+@section('meta_description', Lang::get('front.ghareeb_nawaz'). " ". Lang::get('examination.EXAMINATION'))
 @section('container')
 
 @include('frontend.pages.static.header', ['heading'=> Lang::get('examination.EXAMINATION')])

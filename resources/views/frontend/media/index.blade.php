@@ -1,7 +1,7 @@
 @extends('frontend.layouts.app')
-@section('page_title','Staff detail')
-@section('meta_keywords','Staff detail')
-@section('meta_description', 'Staff detail')
+@section('page_title',Lang::get('front.ghareeb_nawaz'). " ". Lang::get('front.media'))
+@section('meta_keywords',Lang::get('front.ghareeb_nawaz'). " ". Lang::get('front.media'))
+@section('meta_description', Lang::get('front.ghareeb_nawaz'). " ". Lang::get('front.media'))
 @section('container')
 @include('frontend.pages.static.header', ['heading'=> Lang::get('front.media')])
 <br><br>

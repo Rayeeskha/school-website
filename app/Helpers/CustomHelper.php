@@ -3,6 +3,7 @@ namespace App\Helpers;
 use DB;
 use Auth;
 use App\Models\Slider;
+use App\Models\Event;
 
 class CustomHelper{
 	static function getSliderData(){
@@ -13,8 +14,16 @@ class CustomHelper{
                 'src' => asset($item->image), 
             ];
         });
-         return $formattedData->toJson();
+        return $formattedData->toJson();
 	}
+
+    static function getNewEvent(){
+        return Event::wherestatus(1)->latest()->take(4)->get();
+    }
+
+    static function totalEventCount(){
+       return Event::wherestatus(1)->count(); 
+    }
 
 
 
