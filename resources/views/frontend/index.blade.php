@@ -24,7 +24,7 @@
 					</div>
 					@endforeach
 
-					@if(CustomHelper::totalEventCount() > 0)
+					@if(CustomHelper::totalEventCount() > 4)
 						<a href="#!">@lang('front.read_more')</a>
 					@endif
      		</div>
