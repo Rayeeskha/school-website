@@ -16,7 +16,7 @@
 					@foreach(CustomHelper::getNewEvent() ?? [] as $event)
 					<div class="card mt-2" style="border:2px solid blue; border-radius:10px">
 						<div class="card-body btn-card-body">
-							<h5 class="card-title ext-white">{{ $event->title }}</h5>
+							<h5 class="card-title ext-white">{{ Str::limit($event->title, 100) }}</h5>
 							<img src="{{ asset('frontend/assets/new.jpeg') }}" width="40px" height="20px" class="card-new-icon" alt="">
 							<p class="card-text text-dark">{{ $event->description }}</p>
 							<a href="{{ asset($event->attachment) }}" download class="btn btn-success btn-card">@lang('front.download')</a>
