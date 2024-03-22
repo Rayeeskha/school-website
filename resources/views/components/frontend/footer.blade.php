@@ -97,7 +97,7 @@
 		<nav class="mobile-nav">
 			<ul class="mobile-menu">
 				<li class="active">
-					<a href="#!">@lang('front.Home')</a>
+					<a href="/">@lang('front.Home')</a>
 				</li>
 
 				<li>

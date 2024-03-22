@@ -64,7 +64,7 @@
 				<nav class="main-nav ">
 					<ul class="menu">
 						<li class="active">
-							<a href="#!">
+							<a href="/">
 								@lang('front.Home')
 							</a>
 						</li>
