@@ -41,6 +41,7 @@
          font-weight: 500;
          font-style: normal;
          word-spacing:8px !important;
+         text-align: justify;
          }
          /* 
          .para1{
@@ -57,6 +58,7 @@
          font-weight: 500;
          font-style: normal;
          font-size: 22px;
+         text-align: justify;
          }
          .nav-style li a{border-bottom:  1px solid silver}
          .teacher-contact-info img {
