@@ -54,7 +54,7 @@ class HomeController extends Controller
     }
 
     public function event(){
-        $events = Event::latest()->get();
+        $events = Event::latest()->wherestatus(1)->get();
         return view('frontend.media.event', compact('events'));
     }
 

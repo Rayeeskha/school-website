@@ -25,7 +25,7 @@
 					@endforeach
 
 					@if(CustomHelper::totalEventCount() > 4)
-						<a href="#!">@lang('front.read_more')</a>
+						<a href="{{ route('event') }}">@lang('front.read_more')</a>
 					@endif
      		</div>
 			<div class="col-md-8 col-sm-12 col-12 rtl-text para">
