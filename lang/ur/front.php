@@ -50,7 +50,7 @@ return [
 	'course_details'  => 'کورس کی تفصیلات',
 	'media' => 'میڈیا',
 	'markaz_ghareeb' => 'غریب نواز مرکز',
-	'new_event' => 'نئے واقعات کی تازہ کاری',
+	'new_event' => 'اطلاع/اعلان',
 
 	'download' => 'ڈاؤن لوڈ کریں',
 

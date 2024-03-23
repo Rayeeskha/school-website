@@ -50,7 +50,7 @@ return [
 	'course_details'  => 'Course Details',
 	'media' => 'Media',
 	'markaz_ghareeb' => 'Ghareeb Nawaz Markaz',
-	'new_event' => 'New Events update',
+	'new_event' => 'Notification/Announcement',
 	'download' => 'Download',
 	
 	'ghareeb_nawaz' => 'Darul Uloom Ahl-e-Sunnat Gharib Nawaz',
