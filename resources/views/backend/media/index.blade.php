@@ -77,12 +77,12 @@
                   <textarea name="media_desc_ur" class="form-control media_desc_ur" dir="rtl"></textarea>
                   <span class="text-danger Errmedia_desc_ur"></span>
                 </div>
-                <div class="col-md-12">
+                <div class="col-md-6">
                   <label>Media Type</label>
                   <select name="media_type" class="form-control media_type_arr"></select>
                   <span class="text-danger Errmedia_type"></span>
                 </div>
-                <div class="col-md-12">
+                <div class="col-md-6">
                   <label>Type</label>
                   <select name="media" class="form-control media"></select>
                   <span class="text-danger Errmedia"></span>
@@ -95,6 +95,10 @@
                     <img src="" class="preview_image image_responsive" style="width: 50px;height: 50px; border-radius: 50%;">
                   </div>
                   <div class="image_show"></div>
+                </div>
+                <div class="col-lg-12 col-md-12 multipleImageDivBox" style="display: none;">
+                  <label>Multiple Images/Videos/Audios</label>
+                  <input type="file" class="form-control" name="multi_attachment[]" multiple>
                 </div>
               </div>
            </div>

@@ -30,6 +30,11 @@ Route::match(['POST','GET'],'course-details', [HomeController::class, 'courseDet
 
 Route::match(['POST','GET'],'gallary/{id?}/{key?}', [HomeController::class, 'gallary'])->name('gallary');
 
+Route::match(['POST','GET'],'event', [HomeController::class, 'event'])->name('event');
+
+Route::match(['POST','GET'],'media-detail/{id?}', [HomeController::class, 'mediaDetail'])->name('media_detail');
+
+
 Route::match(['POST','GET'],'/page/{page}', [HomeController::class, 'page'])->name('page')->where('page',"examination|academic");
 
 Route::get('lang/change/{lang}',[LanguageController::class,'change'])->name('change');

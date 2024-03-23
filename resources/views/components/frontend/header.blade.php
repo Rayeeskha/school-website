@@ -141,29 +141,24 @@
 							<ul class="nav-style">
 								<li><a href="#!" class="sf-with-ul">@lang('front.audio')</a>
 									<ul>
-										<li><a href="#!">@lang('front.weekly_q_a')</a></li>
-										<li><a href="#!">@lang('front.dars_e_hadith')</a></li>
-										<li><a href="#!">@lang('front.hamd_nd_naat')</a></li>
-										<li><a href="#!">@lang('front.Speeches')</a></li>
+										<li><a href="{{ route('gallary',['Audio', 'Weekly-Q-A']) }}">@lang('front.weekly_q_a')</a></li>
+										<li><a href="{{ route('gallary',['Audio', 'Dars-e-Hadith']) }}">@lang('front.dars_e_hadith')</a></li>
+										<li><a href="{{ route('gallary',['Audio', 'Hamd-Naat']) }}">@lang('front.hamd_nd_naat')</a></li>
+										<li><a href="{{ route('gallary',['Audio', 'Speeches']) }}">@lang('front.Speeches')</a></li>
 									</ul>
 								</li>
 
-								<li><a href="#!" class="sf-with-ul">@lang('front.Literature')</a>
+								<li><a href="{{ route('gallary','Literature') }}" class="sf-with-ul">@lang('front.Literature')</a>
 									<ul>
-										
-										<li><a href="#!">@lang('front.Urdu')</a></li>
-										<li><a href="#!">@lang('front.English')</a></li>
+										<li><a href="{{ route('gallary',['Literature', 'Urdu']) }}">@lang('front.Urdu')</a></li>
+										<li><a href="{{ route('gallary',['Literature', 'English']) }}">@lang('front.English')</a></li>
 									</ul>
 								</li>
 								<li>
 									<a href="{{ route('gallary','Image') }}">@lang('front.img_nd_galary')</a>
 								</li>
-								<li><a href="#!"> @lang('front.Events')</a>
+								<li><a href="{{ route('event') }}"> @lang('front.Events')</a>
 								</li>
-									<!-- <ul>
-										<li><a href="#!"> @lang('front.Urshe1')</a></li>
-										<li><a href="#!">@lang('front.Urshe2')</a></li>
-									</ul> -->
 								</li>
 							</ul>
 						</li>

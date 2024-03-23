@@ -1,7 +1,7 @@
 <?php
 
 return [
-	'Home' => 'گھر',
+	'Home' => 'تعارف',
 	'academic' => 'تعلیمی',
 	'examination' => 'امتحان',
 	'aims_nd_obj' => 'اغراض و مقاصد',
@@ -57,4 +57,6 @@ return [
 	'ghareeb_nawaz' => 'دارالعلوم اہلسنت غریب نواز',
 
 	'read_more' => 'مزید پڑھ ...',
+
+	'event' => 'تقریب',
 ];

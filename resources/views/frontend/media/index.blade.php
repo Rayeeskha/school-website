@@ -31,11 +31,15 @@
    <div class="row">
       @foreach($medias ?? [] as $media)
       <div class="col-md-3">
-         <div class="card " style="height: 270px">
-            <div class="card-body">
-              <img src="{{ asset($media->photo) }}" style="height: 230px; width: 100%">
+         <a href="{{ route('media_detail', $media->id) }}">
+            <div class="card " style="height: 320px">
+               <div class="card-body">
+                 <img src="{{ asset($media->photo) }}" style="height: 230px; width: 100%">
+                 <p>{{ session()->get('lang') =='ur' ? $media->media_title_ur : $media->media_title }} <br>
+                 </p>
+               </div>
             </div>
-         </div>
+         </a>
       </div>
       @endforeach
    </div>

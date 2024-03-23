@@ -40,9 +40,19 @@ class MediaRepository extends BaseRepository
     }
 
     public function store($data){
+        
         $id = @$data['id'];
         if (!empty($data['photo'])) {
             $data['photo'] =  $this->uploadImage($data['photo'], 'uploads/images/media', 'media', ['id' => $id ], 'photo');
+        }
+
+        $multiAttachment = [];
+        if (!empty($data['multi_attachment'])) {
+            foreach ($data['multi_attachment'] as $key => $value) {
+                $multiAttachment[] =  $this->uploadImage($value, 'uploads/images/media', 'media', ['id' => $id ], 'multi_attachment');
+            }
+
+            $data['multi_attachment'] = json_encode($multiAttachment);
         }
         Media::updateOrCreate(['id' => $id], $data);
         return $id > 0 ? 'Updated Sucessfully' : 'Added Sucessfully';

@@ -55,5 +55,6 @@ return [
 	
 	'ghareeb_nawaz' => 'Darul Uloom Ahl-e-Sunnat Gharib Nawaz',
 	'read_more' => 'Read more ...',
+	'event' => 'Event',
 
 ];

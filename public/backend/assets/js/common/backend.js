@@ -95,6 +95,7 @@ $(document).on('click','.editCourse',function(){
 
 // addMedia
 $('.addMedia').click(function() {
+  $('.multipleImageDivBox').hide();
   $('.text-danger').html('');
   $('.media_id').val('');
   $('.image_show').html('');
@@ -129,6 +130,7 @@ $(document).on('click','.editMedia',function(){
   }else if(val=='Events'){
     events(tr.attr('row-media'));
   }
+  $('.multipleImageDivBox').show();
   $('.image_show').html(tr.attr('row-photo'));
   $('.mediaModal').modal({ backdrop: 'static', keyboard: false });
   $('.mediaModal').modal('show');
@@ -137,12 +139,11 @@ $(document).on('click','.editMedia',function(){
 // media_type_arr
 $(document).on('change','.media_type_arr',function(){
   let val = $(this).val();
+  $('.media').html('');
   if (val == 'Audio') {
     audio();
   }else if(val=='Literature'){
     literature();
-  }else if(val=='Events'){
-    events();
   }
 });
 
@@ -159,7 +160,7 @@ function literature(media=''){
   $('.media').html(options);
 }
 
-function events(media=''){
+/*function events(media=''){
   let types = ['Urshe 1', 'Urshe 2'];
   let options = '<option>Select One</option>';  
   $.each(types, function(index, type) {
@@ -170,12 +171,12 @@ function events(media=''){
     options += '<option value="' + type + '" ' + selected + '>' + type + '</option>';
   });
   $('.media').html(options);
-}
+}*/
 
 
 
 function audio(media=''){
-  let types = ['Weekly Q & A', 'Dars-e-Hadith', 'Hamd & Naat','Speeches'];
+  let types = ['Weekly-Q-A', 'Dars-e-Hadith', 'Hamd-Naat','Speeches'];
   let options = '<option>Select One</option>';  
   $.each(types, function(index, type) {
     let selected = '';
