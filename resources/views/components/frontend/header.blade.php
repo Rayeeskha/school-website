@@ -17,8 +17,9 @@
 				<ul class="top-menu top-link-menu d-none d-md-block">
 					<li>
 						<ul>
-							<li><a href="tel:#"><i class="icon-phone"></i> +91 1234567890</a></li>
-							<li><a href="#"><i class="icon-envelope"></i> info@ghareebnawazmarkaz.com</a></li>
+							<li><a href="tel:9838239110"><i class="icon-phone"></i> 
+							+919838239110</a></li>
+							<li><a href="mailto:info@ghareebnawazmarkaz.com"><i class="icon-envelope"></i> info@ghareebnawazmarkaz.com</a></li>
 						</ul>
 					</li>
 				</ul><!-- End .top-menu -->
@@ -98,7 +99,7 @@
 								</li>
 								<li>
 
-									<a href="{{ route('page', 'examination') }}">@lang('front.admission')</a></li>
+									<a href="{{ route('page', 'admission') }}">@lang('front.admission')</a></li>
 								<li>
 									<a href="{{ route('staff_details') }}" >@lang('front.staff_details')</a>
 								</li>
@@ -190,7 +191,7 @@
 							<a href="#!">@lang('front.contact_us') </a>
 							<ul class="nav-style">
 								<li>
-									<a href="#!">
+									<a href="{{ route('page', 'contact-us') }}">
 										@lang('front.markaz_ghareeb')
 									</a>
 								</li>

@@ -13,8 +13,8 @@
 							<img src="{{ asset('frontend/assets/logo/logo.jpg') }}" class="footer-logo" alt="Footer Logo"
 								width="82" height="25">
 							<p><img src="{{ asset('frontend/assets/images/location2.png') }}" > @lang('front.Baidaula') </p>
-							<p><img src="{{ asset('frontend/assets/images/phone2.png') }}" > +951820101</p>
-							<p><a href="#"><img src="{{ asset('frontend/assets/images/email2.png') }}" > info@ghareebnawazmarkaz.com</a></p>
+							<p><img src="{{ asset('frontend/assets/images/phone2.png') }}" > +919838239110</p>
+							<p><a href="mailto:info@ghareebnawazmarkaz.com"><img src="{{ asset('frontend/assets/images/email2.png') }}" > info@ghareebnawazmarkaz.com</a></p>
 							<div class="social-icons social-icons-color">
 								
 								<a href="#" class="social-icon" target="_blank" title="Facebook"><img src="{{ asset('frontend/assets/images/fb.svg') }}"  class="icon-facebook-f"></a>
@@ -122,7 +122,7 @@
 						</li>
 						<li>
 
-							<a href="{{ route('page', 'examination') }}">@lang('front.admission')</a></li>
+							<a href="{{ route('page', 'admission') }}">@lang('front.admission')</a></li>
 						<li>
 							<a href="{{ route('staff_details') }}" >@lang('front.staff_details')</a>
 						</li>
@@ -197,7 +197,7 @@
 					</ul>
 				</li>
 				<li>
-					<a href="#!">@lang('front.contact_us')</a>
+					<a href="{{ route('page', 'contact-us') }}">@lang('front.contact_us')</a>
 					<ul class="nav-style">
 						<li>
 							<a href="#!">@lang('front.@lang('front.markaz_ghareeb')</a>

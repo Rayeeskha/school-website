@@ -1,5 +1,5 @@
 <div class="page-header text-center" style="background-image: url('{{ url('frontend/assets/profile/9.JPG')  }}')">
-	<div class="container">
+	<div class="container" dir="{{ empty(session()->get('locale')) ||  session()->get('locale') == 'en' ? 'ltr' :'rtl' }}">
 		<h1 class="page-title">{{ $heading }}</h1>
 		<p>
 			<a href="/" class="home">@lang('front.Home') </a> / {{ $heading }} 

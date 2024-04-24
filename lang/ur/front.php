@@ -33,7 +33,7 @@ return [
 	'taaj_al_sariha' => "تاج الشریعہ",
 	'the_principle' => 'اصول',
 	'Donations'     => 'عطیات',
-	'Baidaula'      =>'بیدولہ',
+	'Baidaula'      =>'بیدولہ گڑھ، مصرولیہ موفی، اتر پردیش 272189',
 	'help_nd_info'  =>'مدد اور معلومات',
 	'about_us'      => 'ہمارے بارے میں',
 	'privacy_policy' => 'رازداری کی پالیسی', 
@@ -59,4 +59,17 @@ return [
 	'read_more' => 'مزید پڑھ ...',
 
 	'event' => 'تقریب',
+
+	'Phone' => 'فون',
+	'Email' => 'ای میل',
+
+	'Address' => 'پتہ',
+
+	'Contact_type' => 'رابطہ کی قسم',
+	'Message' => 'پیغام',
+	'Submit' => 'جمع کرائیں',
+	'Name' => 'نام',
+
+	'Markaz' => 'مرکز',
+	'Principle' => 'اصول',
 ];

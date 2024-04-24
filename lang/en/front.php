@@ -33,7 +33,7 @@ return [
 	'taaj_al_sariha' => "Taaj al-Shari'ah",
 	'the_principle' => 'The Principle',
 	'Donations'     => 'Donations',
-	'Baidaula'      =>'Baidaula',
+	'Baidaula'      =>'Baidaula Garh, Misrooliya Maufi, Uttar Pradesh 272189',
 	'help_nd_info'  =>'Help & Information',
 	'about_us'      => 'About Us',
 	'privacy_policy' => 'Privacy Policy',
@@ -56,5 +56,14 @@ return [
 	'ghareeb_nawaz' => 'Darul Uloom Ahl-e-Sunnat Gharib Nawaz',
 	'read_more' => 'Read more ...',
 	'event' => 'Event',
+	'Phone' => 'Phone',
+	'Email' => 'Email',
+	'Address' => 'Address',
+	'Contact_type' => 'Contact Type',
+	'Message' => 'Message',
+	'Submit' => 'Submit',
+	'Name' => 'Name',
+	'Markaz' => 'Markaz',
+	'Principle' => 'Principle',
 
 ];
