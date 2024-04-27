@@ -5,6 +5,7 @@
       <meta http-equiv="X-UA-Compatible" content="IE=edge">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <title>@yield('page_title')</title>
+      <meta name="csrf-token" content="{{ csrf_token() }}">
       <meta name="keywords" content="@yield('meta_keywords','Darul Uloom Ahl-e-Sunnat Gharib Nawaz')">
       <meta name="description" content="@yield('meta_keywords','Darul Uloom Ahl-e-Sunnat Gharib Nawaz')">
       <meta name="author" content="khan Rayees">

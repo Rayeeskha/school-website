@@ -3,11 +3,13 @@
 namespace App\Http\Controllers\Frontend;
 
 use App\Http\Controllers\Controller;
+use App\Http\Requests\ContactRequest;
 use Illuminate\Http\Request;
 use App\Models\Teacher;
 use App\Models\Course;
 use App\Models\Media;
 use App\Models\Event;
+use App\Models\Contact;
 
 class HomeController extends Controller
 {
@@ -56,6 +58,18 @@ class HomeController extends Controller
     public function event(){
         $events = Event::latest()->wherestatus(1)->get();
         return view('frontend.media.event', compact('events'));
+    }
+
+    public function contactUs(ContactRequest $request){
+        $input = $request->validated();
+        try {
+            $input = $request->all();
+            $input['language'] = empty(session()->get('locale')) || session()->get('locale') == 'ur' ? 'ur' : 'en';
+            Contact::create($input);
+            return response()->json(['success' => true,'message' => 'Contact request sent successfully !','url'=>url('page/contact-us')],200);
+        }catch (\Throwable $e)  {
+            return response()->json(['status' => 'error', 'message' => $e->getMessage()]);
+        }
     }
 
 }

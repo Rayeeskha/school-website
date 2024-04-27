@@ -60,6 +60,11 @@
             </a>
          </li>
          <li class="nav-item">
+            <a class="nav-link menu-link " href="{{ route('admin.contact-us.index') }}">
+               <i class="ri-layout-3-line"></i> <span data-key="t-widgets">Contact us</span>
+            </a>
+         </li>
+         <li class="nav-item">
             <a class="nav-link menu-link" href="#sidebarLanding" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="sidebarLanding">
             <i class="ri-rocket-line"></i> <span data-key="t-landing">Settings</span>
             </a>

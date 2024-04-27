@@ -4,6 +4,11 @@
 @section('meta_description', Lang::get('front.ghareeb_nawaz'). " ". Lang::get('contactus.contactus'))
 @section('container')
 
+<style type="text/css">
+	select.form-control:not([size]):not([multiple]) { height: 40px; }
+	.form-control { padding: 0px 5px;}
+</style>
+
 @include('frontend.pages.static.header', ['heading'=> Lang::get('contactus.contactus')])
 
 <div class="page-content mt-4">
@@ -26,7 +31,7 @@
 		<div class="card shadow">
 			<div class="card-body">
 				<h5>@lang('contactus.contactus')</h5><hr>
-				<form>
+				<form action="{{ route('contact_us') }}" method="post" class="validateForm2">
 					<div class="row">
 						<div class="col-md-6">
 							<label> @lang('front.Contact_type')</label>
@@ -37,19 +42,19 @@
 						</div>
 						<div class="col-md-6">
 							<label> @lang('front.Name')</label>
-							<input type="text" name="name" class="form-control">
+							<input type="text" name="name" class="form-control name" dir="{{ CustomHelper::currentLanguage() }}">
 						</div>
 						<div class="col-md-6">
 							<label> @lang('front.Email')</label>
-							<input type="text" name="email" class="form-control">
+							<input type="text" name="email" class="form-control email" dir="{{ CustomHelper::currentLanguage() }}">
 						</div>
 						<div class="col-md-6">
 							<label> @lang('front.Phone')</label>
-							<input type="text" name="phone" class="form-control">
+							<input type="text" name="phone" class="form-control phone" dir="{{ CustomHelper::currentLanguage() }}">
 						</div>
 						<div class="col-md-12">
 							<label> @lang('front.Message')</label>
-							<textarea name="message" class="form-control"></textarea>
+							<textarea name="message" class="form-control message" dir="{{ CustomHelper::currentLanguage() }}"></textarea>
 						</div>
 					</div>
 					<button type="submit" class="btn btn-primary"> @lang('front.Submit')</button>

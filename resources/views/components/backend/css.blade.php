@@ -2,11 +2,11 @@
 <html lang="en" data-layout="vertical" data-topbar="light" data-sidebar="dark" data-sidebar-size="lg" data-sidebar-image="none" data-preloader="disable">
    <head>
       <meta charset="utf-8" />
-      <title>Dashboard | Velzon - Admin & Dashboard Template</title>
+      <title>Darul Uloom Ahl-e-Sunnat Gharib Nawaz</title>
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta name="csrf-token" content="{{ csrf_token() }}">
-      <meta content="Gareeb Nawaz Markaz" name="description" />
-      <meta content="Themesbrand" name="Khan Rayees" />
+      <meta content="Darul Uloom Ahl-e-Sunnat Gharib Nawaz" name="description" />
+      <meta content="khanrayees.com" name="Khan Rayees" />
       <!-- App favicon -->
       <link rel="shortcut icon" href="{{ asset('backend/assets/images/favicon.ico') }}">
       <!-- jsvectormap css -->

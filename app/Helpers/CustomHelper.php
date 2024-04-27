@@ -25,6 +25,9 @@ class CustomHelper{
        return Event::wherestatus(1)->count(); 
     }
 
+    static function currentLanguage(){
+        return empty(session()->get('locale')) || session()->get('locale') == 'ur' ? 'rtl' : 'ltr';
+    }
 
 
 

@@ -34,6 +34,8 @@ Route::match(['POST','GET'],'event', [HomeController::class, 'event'])->name('ev
 
 Route::match(['POST','GET'],'media-detail/{id?}', [HomeController::class, 'mediaDetail'])->name('media_detail');
 
+Route::match(['POST','GET'],'save-contact-us', [HomeController::class, 'contactUs'])->name('contact_us');
+
 
 Route::match(['POST','GET'],'/page/{page}', [HomeController::class, 'page'])->name('page')->where('page',"examination|academic|admission|contact-us");
 
