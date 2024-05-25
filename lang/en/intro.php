@@ -14,7 +14,7 @@ Allah resonate from this institution, enlightening the minds of the people.',
 every visitor. It functions as a hub where proficient and seasoned teachers and scholars
 nourish various sciences. From here, beliefs and practices are reformed, transforming
 individuals into genuine followers of the Sunnah and the esteemed Prophet. The
-institution has, in a relatively short period (nearly 24 years), attained remarkable heights
+institution has, in a relatively short period (nearly 25 years), attained remarkable heights
 and perfection, carving out its own identity nationally and internationally. This success is
 attributed to continuous efforts, unwavering dedication, and the persistent pursuit of
 religious excellence.',

@@ -22,7 +22,7 @@
 				<div class="col-12 rtl-text">
 					<div class="border-bottom pb-2 para">
 						<h2 class="title title-1 mt-2  urdu-title">@lang('examination.the_yer_of_str')</h2>
-						<p> <span>@lang('examination.mid_term_mark')</span> <br/>@lang('examination.mid_term_mark')<br/><br/>
+						<p> <span>@lang('examination.mid_term_mark')</span><br/>
 							 @lang('examination.marks_and')<br/>
 						</p>
 					</div>

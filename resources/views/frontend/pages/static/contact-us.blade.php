@@ -19,7 +19,7 @@
 		<div class="card shadow">
 			<div class="card-body">
 				<h5>@lang('front.ghareeb_nawaz')</h5><hr>
-				<p>@lang('front.Phone') : <a href="tel:9838239110">9838239110</a></p>
+				<p>@lang('front.Phone') : <a href="tel:9838239110">9838239110</a>, <a href="tel:9415673664">9415673664</a></p>
 				<p> @lang('front.Email') : <a href="mailto:info@ghareebnawazmarkaz.com">info@ghareebnawazmarkaz.com</a></p>
 				<p>@lang('front.Address'): @lang('front.Baidaula')</p>
 				<hr>

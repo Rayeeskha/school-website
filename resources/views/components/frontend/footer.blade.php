@@ -200,7 +200,7 @@
 					<a href="{{ route('page', 'contact-us') }}">@lang('front.contact_us')</a>
 					<ul class="nav-style">
 						<li>
-							<a href="#!">@lang('front.@lang('front.markaz_ghareeb')</a>
+							<a href="{{ route('page', 'contact-us') }}">@lang('front.markaz_ghareeb')</a>
 						</li>
 						<li>
 							<a href="#!">@lang('front.the_principle')</a>
